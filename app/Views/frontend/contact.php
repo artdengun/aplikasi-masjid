@@ -4,11 +4,11 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="breadcumb">
-                    <h2>Contact us</h2>
+                    <h2>Kontak Masjid Al-hikmah Payangan </h2>
                     <ul class="list-inline">
-                        <li><a href="index-2.html">Home</a></li>
+                        <li><a href="<?php echo base_url("/"); ?>">Home</a></li>
                         <li><i class="fa fa-angle-right"></i></li>
-                        <li><a href="#">contact</a></li>
+                        <li><a href="#">Kontak Masjid</a></li>
                     </ul>
                 </div>
             </div>
@@ -22,8 +22,27 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="map-area">
-                    <a href="#" class="go-map">Go to Map</a>
-                    <div id="map" class="map-full" style="width:100%; height:585px;"></div>
+                    <a class="go-map">Maps Al-hikmah</a>
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="1080" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=masjid%20al-hikmah%20jln.diman%20&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com/divi-discount/"></a><br>
+                            <style>
+                                .mapouter {
+                                    position: relative;
+                                    text-align: right;
+                                    height: 500px;
+                                    width: 1080px;
+                                }
+                            </style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+                            <style>
+                                .gmap_canvas {
+                                    overflow: hidden;
+                                    background: none !important;
+                                    height: 500px;
+                                    width: 1080px;
+                                }
+                            </style>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -31,21 +50,20 @@
             <div class="col-lg-4 col-md-12 col-xs-12 col-sm-12">
                 <div class="contact-info">
                     <span><i class="fa fa-map-marker"></i></span>
-                    <p>Sector # 48, 123 Street,<br>
-                        Colony, INDIA</p>
+                    <p>Jl. Wibawa Mukti II Jl. Diman, RT.004/RW.006, Jatisari, Kec. Jatiasih, Kota Bks, Jawa Barat 17426</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-12 col-xs-12 col-sm-12">
                 <div class="contact-info">
                     <span><i class="fa fa-phone"></i></span>
-                    <p>+8100 376 6284,</p>
-                    <p>+8100 255 6858 </p>
+                    <p>0822 6199 4978</p>
+                    <p>0857 1696 7806 </p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-12 col-xs-12 col-sm-12">
                 <div class="contact-info">
                     <span><i class="fa fa-envelope"></i></span>
-                    <p>Mosque@example.com</p>
+                    <p>masjidalhikmahpayangan@gmail.com</p>
                 </div>
             </div>
         </div>

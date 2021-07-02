@@ -42,11 +42,10 @@
         <div class="row">
             <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
                 <div class="banner-con">
-                    <h2>"Join the Islamic Community"</h2>
-                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin. This is Photoshop's version
-                        of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean itudin. This is
-                        Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
-                    <span>~ by <a href="#">Akshay H.</a> (Community Head)</span>
+                    <h2>"Kata Pengantar Ketua Dewan Kemakmuran Masjid AL-hikmah"</h2>
+                    <p></p>
+                    <p>Allah SWT berfirman : "Sesungguhnya yang memakmurkan masjid Allah hanyalah orang-orang yang beriman kepada Allah dan hari kemudian, serta (tetap) melaksanakan salat, menunaikan zakat dan tidak takut (kepada apa pun) kecuali kepada Allah. Maka mudah-mudahan mereka termasuk orang-orang yang mendapat petunjuk" Q.S At-Taubah : 18</p>
+                    <span>Disampaikan oleh : <a>Ust.H. Imam Nawawi</a> </span>
                 </div>
             </div>
             <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
@@ -54,10 +53,10 @@
                     <figure>
                         <img src="<?php echo base_url('frontend/images/banner/1.jpg'); ?>" alt="" />
                         <div class="content">
-                            <h4>contact us for a joining</h4>
-                            <h1>+1 800 123 4567</h1>
-                            <span class="mail">Mosque@example.com</span>
-                            <a href="#" class="btn3"><span>Contact</span></a>
+                            <h4>Kontak Pengurus Masjid Al-hikmah Payangan</h4>
+                            <h1>082261994978</h1>
+                            <h1>085716967806</h1>
+                            <span class="mail">masjidalhikmahpayangan@gmail.com</span>
                         </div>
                     </figure>
                 </div>
@@ -78,29 +77,30 @@
                             <a href="https://www.youtube.com/watch?v=0I8GmbDU7c4" class="play-ico video-play-icon"></a>
                         </div>
                         <div class="con">
-                            <h4>WATCH Our Video</h4>
+                            <h4>Lihat Video Lainnya</h4>
                         </div>
                     </figure>
                 </div>
             </div>
             <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
                 <div class="video-content">
-                    <h2>Video Tentang Masjid Al-hikmah payangan <br>MASJID AL-HIKMAH PAYANGAN</h2>
-                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin. This is Photoshop's version
-                        of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean itudin. This is
-                        Photoshop's sion of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. This is
-                        Photoshop's versionf Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
-                        sollicitudin,</p>
+                    <h2>Sejarah Masjid Al-Hikmah Payangan</h2>
+                    <p>Masjid Al-Hikmah (dahulu bernama Mushola Al-Hikmah) merupakan salah satu tempat peribadahan umat Islam tertua di kelurahan Jati Sari dan Masjid tertua ke-2 di Kampung Payangan. Didirikan pada tahun 1980 di atas seluas tanah 210 M oleh pewaqif Alm. H.Toyyib dan diserahkan kepada Nadzir Ust.Siman dengan dua orang saksi yakni Alm. Bpk. Sakim dan Kepala Desa Jati Luhur yakni Alm. Bpk. Senan dan di tanda tangani oleh Ketua Kantor Urusan Agama Kecamatan Pondok Gede yakni Alm. H. Abdillah pada hari Sabtu, 2 Rabi'ul Awwal 1403 H atau bertepatan pada tanggal 15 Januari 1983 (tanggal terbit Akta Wakaf).
+                        Penamaan Al-Hikmah sendiri adalah hasil sumbangan pemikiran Alm. Bpk. Genih, yang bermakna Lambang Kebijaksanaan yang melampaui Ilmu Pengetahuan, Hikmah dapat juga dimaknai 'tengah' sebagaimana letak posisinya yang persis berada ditengah Kampung Payangan.
+                    </p>
+                    <p>Berdasarkan musyawarah perubahan Mushola Menjadi Masjid telah di laksanakan pada Rabu malam Kamis Tanggal 9 Dzulhijjah 1441 H atau 2020 M, mengingat mendesaknya perubahan dan dinamika kondisi, kewilayahan, populasi penduduk serta kebutuhan akan sarana peribadahan umat saat ini dan masa yang akan datang. Wallahu'alam bish shawwab.</p>
                     <div class="about">
                         <div class="w-50 floatleft pd-r15">
-                            <h4><span><i class="fa fa-eye"></i></span> Our Vision</h4>
-                            <p>Nibh vel velit auctor aliquet. Aenean ituin. This is Photoshop's version of
-                                Phooshop's sion of Lorem.</p>
+                            <h4><span><i class="fa fa-eye"></i></span> VISI </h4>
+                            <p> Menjadikan Sarana Peribadahan Yang Rahmatan Lil'Aalamiin,
+                                Berdasarkan Al-Quran & Hadits </p>
                         </div>
                         <div class="w-50 floatleft pd-l15">
-                            <h4><span><i class="fa fa-flag"></i></span> Our Mission</h4>
-                            <p>Nibh vel velit auctor aliquet. Aenean ituin. This is Photoshop's version of
-                                Phooshop's sion of Lorem.</p>
+                            <h4><span><i class="fa fa-flag"></i></span> MISI</h4>
+                            <p>1. Terwujudnya Masjid Yang Bersih, Rapih Dan Nyaman.</p>
+                            <p>2. Menjadi Lembaga Dakwah, Pendidikan, Pengembangan Ilmu Serta Budaya Islami </p>
+                            <p>3. Meningkatkan Ekonomi Pemberdayaan Umat Yang Dilandasi Oleh Keimanan Dan Ketaqwaan Kepada Allah SWT </p>
+
                         </div>
                     </div>
                 </div>

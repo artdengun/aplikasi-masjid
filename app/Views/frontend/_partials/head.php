@@ -66,8 +66,8 @@
                         <div class="header-social text-right">
                             <ul class="list-inline">
                                 <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
+                                <li><a href="#"><i class="fa fa-gmail-square"></i></a></li>
                                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                             </ul>
                         </div>
