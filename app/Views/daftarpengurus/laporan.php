@@ -24,31 +24,13 @@
             <div class="col-12">
                 <div class="card shadow-lg">
                     <div class="card-header shadow-sm">
-                        <a href="<?php echo base_url('daftarpengurus/create'); ?>" class="btn btn-outline-success margin-lg float-right"> Tambah Data Pengurus</a>
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
-                        <?php
-                        if (!empty(session()->getFlashdata('success'))) { ?>
-                            <div class="alert alert-success">
-                                <?php echo session()->getFlashdata('success'); ?>
-                            </div>
-                        <?php } ?>
 
-                        <?php if (!empty(session()->getFlashdata('info'))) { ?>
-                            <div class="alert alert-info">
-                                <?php echo session()->getFlashdata('info'); ?>
-                            </div>
-                        <?php } ?>
-
-                        <?php if (!empty(session()->getFlashdata('warning'))) { ?>
-                            <div class="alert alert-warning">
-                                <?php echo session()->getFlashdata('warning'); ?>
-                            </div>
-                        <?php } ?>
                         <div class="table-responsive">
 
-                            <table id="example2" class="table table-bordered table-striped">
+                            <table id="example1" class="table table-bordered table-striped">
                                 <thead>
                                     <tr>
                                         <th>No</th>
@@ -60,7 +42,6 @@
                                         <th>Jabatan</th>
                                         <th>Status</th>
                                         <th>Tanggal Join</th>
-                                        <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -75,17 +56,6 @@
                                             <td><?php echo $row['jabatan']; ?></td>
                                             <td><?php echo $row['status']; ?></td>
                                             <td><?php echo $row['tanggalmasuk']; ?></td>
-
-                                            <td>
-                                                <div class="btn-group">
-                                                    <a href="<?php echo base_url('daftarpengurus/edit/' . $row['idpengurus']); ?>" class="btn btn-sm btn-success">
-                                                        <i class="fa fa-edit"></i>
-                                                    </a>
-                                                    <a href="<?php echo base_url('daftarpengurus/delete/' . $row['idpengurus']); ?>" class="btn btn-sm btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus kategori ini?');">
-                                                        <i class="fa fa-trash-alt"></i>
-                                                    </a>
-                                                </div>
-                                            </td>
                                         </tr>
                                     <?php } ?>
                                 </tbody>
@@ -100,7 +70,6 @@
                                         <th>Jabatan</th>
                                         <th>Status</th>
                                         <th>Tanggal Join</th>
-                                        <th>Action</th>
                                     </tr>
                                 </tfoot>
                             </table>

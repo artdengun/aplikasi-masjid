@@ -3,20 +3,18 @@
 
 <div class="content-wrapper">
   <div class="content-header">
-    <div class="container-fluid text-center">
-      <marquee style="color: red;">
-        <p class="mb-2"><b>Untuk menjaga Keamanan data, Lakukan Pencadangan Data Secara Mandiri</b></p>
-      </marquee>
-
-      <h1 class="h3 mb-2 text-gray-800"> Data muazin Masjid Al-Hikmah Kp. payangan</h1>
-      <p class="mb-4">Data muazin yang dimasukan adalah data yang sudah valid dan sesuai dengan data internal masjid</p>
-
-      Alamat : <p><b>Jl. Wibawa Mukti II Jl. Diman, RT.004/RW.006, Jatisari, Kec. Jatiasih, Kota Bks, Jawa Barat 17426</b></p>
+    <div class="container-fluid  text-center">
+      <p style="color:green;"> <b>MASJID AL-HIKMAH KAMPUNG PAYANGAN <b /><br></p>
+      <h4><b><i>MANAGEMENT INFORMATION SYSTEM</i></b></h4>
+      <img src="<?php echo base_url('dist/img/logo.ico'); ?>" alt="gambar al-hikmah" height="187"> <br><br>
+      <h3 class="h3 mb-2 text-gray-800"> Data Muazin <br>
+      </h3>
+      <p class="mb-4">Update Data Secara Rutin Agar Konsistensi Data Akan Terjaga Dengan Baik</p>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="<?php echo base_url('/') ?>">Dashboard</a></li>
-          <li class="breadcrumb-item"><a href="<?php echo base_url('/daftarmuazin') ?>">Data muazin</a></li>
-          <li class="breadcrumb-item" aria-current="page">Tambah Data muazin</li>
+          <li class="breadcrumb-item"><a href="<?php echo base_url('/') ?>"> <i class="nav-icon fas  fa-mosque"></i> Dashboard</a></li>
+          <li class="breadcrumb-item"><a href="<?php echo base_url('/') ?>"> <i class="nav-icon fas  fa-users"></i> Data Muazin</a></li>
+          <li class="breadcrumb-item" aria-current="page"><i class="nav-icon fas  fa-user"></i> Tambah Data</li>
         </ol>
       </nav>
     </div>
@@ -112,12 +110,6 @@
                     <?php
                     echo form_label('Status Keaktifan muazin', 'Status');
                     echo form_dropdown('status', ['' => 'Pilih', 'AKTIF' => 'AKTIF', 'OFF' => 'OFF'], $inputs['status'], ['class' => 'form-control']);
-                    ?>
-                  </div>
-                  <div class="form-group">
-                    <?php
-                    echo form_label('Foto muazin');
-                    echo form_upload('foto', '', ['class' => 'form-control']);
                     ?>
                   </div>
                 </div>

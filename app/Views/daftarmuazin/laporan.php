@@ -23,32 +23,12 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <a href="<?php echo base_url('daftarmuazin/create'); ?>" class="btn btn-outline-success shadow-lg float-right">Tambah Data Muazin</a>
-
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
-                        <?php
-                        if (!empty(session()->getFlashdata('success'))) { ?>
-                            <div class="alert alert-success">
-                                <?php echo session()->getFlashdata('success'); ?>
-                            </div>
-                        <?php } ?>
-
-                        <?php if (!empty(session()->getFlashdata('info'))) { ?>
-                            <div class="alert alert-info">
-                                <?php echo session()->getFlashdata('info'); ?>
-                            </div>
-                        <?php } ?>
-
-                        <?php if (!empty(session()->getFlashdata('warning'))) { ?>
-                            <div class="alert alert-warning">
-                                <?php echo session()->getFlashdata('warning'); ?>
-                            </div>
-                        <?php } ?>
                         <div class="table-responsive">
 
-                            <table id="example2" class="table table-bordered table-striped">
+                            <table id="example1" class="table table-bordered table-striped">
                                 <thead>
                                     <tr>
                                         <th>No</th>
@@ -58,7 +38,6 @@
                                         <th>handphone</th>
                                         <th>tahun</th>
                                         <th>Petugas</th>
-                                        <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -72,16 +51,6 @@
                                             <td><?php echo $row['handphone']; ?></td>
                                             <td><?php echo $row['tahun']; ?></td>
                                             <td><?php echo $row['namapengurus']; ?></td>
-                                            <td class="text-center">
-                                                <div class="btn-group">
-                                                    <a href="<?php echo base_url('daftarmuazin/edit/' . $row['idmuazin']); ?>" class="btn btn-sm btn-success">
-                                                        <i class="fa fa-edit"></i>
-                                                    </a>
-                                                    <a href="<?php echo base_url('daftarmuazin/delete/' . $row['idmuazin']); ?>" class="btn btn-sm btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus Data ini?');">
-                                                        <i class="fa fa-trash-alt"></i>
-                                                    </a>
-                                                </div>
-                                            </td>
                                         </tr>
                                     <?php } ?>
                                 </tbody>
@@ -94,7 +63,6 @@
                                         <th>handphone</th>
                                         <th>tahun</th>
                                         <th>Petugas</th>
-                                        <th>Action</th>
                                     </tr>
                                 </tfoot>
                             </table>

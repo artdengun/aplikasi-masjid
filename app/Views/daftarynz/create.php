@@ -3,20 +3,18 @@
 
 <div class="content-wrapper">
   <div class="content-header">
-    <div class="container-fluid text-center">
-      <marquee style="color: red;">
-        <p class="mb-2"><b>Untuk menjaga Keamanan data, Lakukan Pencadangan Data Secara Mandiri</b></p>
-      </marquee>
-
-      <h1 class="h3 mb-2 text-gray-800"> Data Yatim dan Janda Masjid Al-Hikmah Kp. payangan</h1>
-      <p class="mb-4">Data Yatim dan Janda yang dimasukan adalah data yang sudah valid dan sesuai dengan data internal masjid</p>
-
-      Alamat : <p><b>Jl. Wibawa Mukti II Jl. Diman, RT.004/RW.006, Jatisari, Kec. Jatiasih, Kota Bks, Jawa Barat 17426</b></p>
+    <div class="container-fluid  text-center">
+      <p style="color:green;"> <b>MASJID AL-HIKMAH KAMPUNG PAYANGAN <b /><br></p>
+      <h4><b><i>MANAGEMENT INFORMATION SYSTEM</i></b></h4>
+      <img src="<?php echo base_url('dist/img/logo.ico'); ?>" alt="gambar al-hikmah" height="187"> <br><br>
+      <h3 class="h3 mb-2 text-gray-800"> Data Janda, Yatim/Piatu dan Dhuafa <br>
+      </h3>
+      <p class="mb-4">Update Data Secara Rutin Agar Konsistensi Data Akan Terjaga Dengan Baik</p>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="<?php echo base_url('/') ?>">Dashboard</a></li>
-          <li class="breadcrumb-item"><a href="<?php echo base_url('/daftarynz') ?>">Data Yatim dan Janda</a></li>
-          <li class="breadcrumb-item" aria-current="page">Tambah Data Yatim dan Janda</li>
+          <li class="breadcrumb-item"><a href="<?php echo base_url('/') ?>"> <i class="nav-icon fas  fa-mosque"></i> Dashboard</a></li>
+          <li class="breadcrumb-item"><a href="<?php echo base_url('/') ?>"> <i class="nav-icon fas  fa-users"></i> Data Yatim Dan Piatu</a></li>
+          <li class="breadcrumb-item" aria-current="page"><i class="nav-icon fas  fa-user"></i> Tambah Data</li>
         </ol>
       </nav>
     </div>

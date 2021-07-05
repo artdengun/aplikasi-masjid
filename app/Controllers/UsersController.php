@@ -25,7 +25,7 @@ class UsersController extends BaseController
         // membuat halaman otomatis berubah ketika berpindah halaman 
         $currentPage = $this->request->getVar('page_users') ? $this->request->getVar('page_users') : 1;
         // paginate
-        $paginate = 5;
+        $paginate = 10000000;
         $data['users']   = $this->users_model->paginate($paginate, 'users');
         $data['pager']        = $this->users_model->pager;
         $data['currentPage']  = $currentPage;
@@ -71,18 +71,6 @@ class UsersController extends BaseController
         }
     }
 
-
-
-    // public function show($id)
-    // {
-    //     // proteksi halaman
-    //     if (session()->get('username') == '') {
-    //         session()->setFlashdata('haruslogin', 'Silahkan Login Terlebih Dahulu');
-    //         return redirect()->to(base_url('login'));
-    //     }
-    //     $data['users'] = $this->users_model->getData($id);
-    //     echo view('users/show', $data);
-    // }
 
     public function edit($id)
     {

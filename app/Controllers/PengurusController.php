@@ -26,7 +26,7 @@ class PengurusController extends BaseController
         $currentPage = $this->request->getVar('page_daftarpengurus') ? $this->request->getVar('page_daftarpengurus') : 1;
 
         // paginate
-        $paginate = 5;
+        $paginate = 10000000;
         $data['daftarpengurus'] = $this->pengurus_model->paginate($paginate, 'daftarpengurus');
         $data['pager']          = $this->pengurus_model->pager;
         $data['currentPage']    = $currentPage;
@@ -34,6 +34,27 @@ class PengurusController extends BaseController
 
         echo view('daftarpengurus/index', $data);
     }
+
+    public function laporan()
+    {
+        // proteksi halaman
+        if (session()->get('username') == '') {
+            session()->setFlashdata('haruslogin', 'Silahkan Login Terlebih Dahulu');
+            return redirect()->to(base_url('login'));
+        }
+        // membuat halaman otomatis berubah ketika berpindah halaman 
+        $currentPage = $this->request->getVar('page_daftarpengurus') ? $this->request->getVar('page_daftarpengurus') : 1;
+
+        // paginate
+        $paginate = 10000000;
+        $data['daftarpengurus'] = $this->pengurus_model->paginate($paginate, 'daftarpengurus');
+        $data['pager']          = $this->pengurus_model->pager;
+        $data['currentPage']    = $currentPage;
+
+
+        echo view('daftarpengurus/laporan', $data);
+    }
+
 
     public function create()
     {

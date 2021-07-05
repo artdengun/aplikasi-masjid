@@ -27,13 +27,30 @@ class YnzController extends BaseController
         // membuat halaman otomatis berubah ketika berpindah halaman 
         $currentPage = $this->request->getVar('page_daftarynz') ? $this->request->getVar('page_daftarynz') : 1;
         // paginate
-        $paginate = 5;
+        $paginate = 10000000;
         $data['daftarynz']   = $this->ynz_model->join('daftarpengurus', 'daftarpengurus.idpengurus = daftarynz.idpengurus')->paginate($paginate, 'daftarynz');
         $data['pager']        = $this->ynz_model->pager;
         $data['currentPage']  = $currentPage;
         echo view('daftarynz/index', $data);
     }
 
+
+    public function laporan()
+    {
+        // proteksi halaman
+        if (session()->get('username') == '') {
+            session()->setFlashdata('haruslogin', 'Silahkan Login Terlebih Dahulu');
+            return redirect()->to(base_url('login'));
+        }
+        // membuat halaman otomatis berubah ketika berpindah halaman 
+        $currentPage = $this->request->getVar('page_daftarynz') ? $this->request->getVar('page_daftarynz') : 1;
+        // paginate
+        $paginate = 10000000;
+        $data['daftarynz']   = $this->ynz_model->join('daftarpengurus', 'daftarpengurus.idpengurus = daftarynz.idpengurus')->paginate($paginate, 'daftarynz');
+        $data['pager']        = $this->ynz_model->pager;
+        $data['currentPage']  = $currentPage;
+        echo view('daftarynz/laporan', $data);
+    }
 
     public function create()
     {

@@ -19,12 +19,20 @@
 <body class="hold-transition login-page">
     <div class="login-box">
         <!-- /.login-logo -->
-        <div class="card card-outline card-primary">
+        <div class="card card-outline card-primary shadow-lg">
             <div class="card-header text-center">
-                <a href="#" class="h1"><b>LOGIN</b></a>
+                <a href="#" class="h1"><b>MIS</b></a>
+            </div> <br>
+            <div class="text-center">
+                <img src="<?php echo base_url('dist/img/logo.ico'); ?>" class="rounded-circle mx-auto" alt="gambar al-hikmah" height="180"> <br><br>
+                <h4>Management Information System</h4>
+
+            </div>
+            <p class="login-box-msg"></p>
+
+            <div class="">
             </div>
             <div class="card-body">
-                <p class="login-box-msg">Al-Hikmah Management System</p>
                 <?php
                 if (!empty(session()->getFlashdata('sukses'))) { ?>
                     <div class="alert alert-success">

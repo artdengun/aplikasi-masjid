@@ -28,12 +28,31 @@ class MarbotController extends BaseController
         $currentPage = $this->request->getVar('page_daftarmarbot') ? $this->request->getVar('page_daftarmarbot') : 1;
 
         // paginate
-        $paginate = 5;
+        $paginate = 10000000;
         $data['daftarmarbot']   = $this->marbot_model->join('daftarpengurus', 'daftarpengurus.idpengurus = daftarmarbot.idpengurus')->paginate($paginate, 'daftarmarbot');
         $data['pager']        = $this->marbot_model->pager;
         $data['currentPage']  = $currentPage;
         echo view('daftarmarbot/index', $data);
     }
+
+    public function laporan()
+    {
+        // proteksi halaman
+        if (session()->get('username') == '') {
+            session()->setFlashdata('haruslogin', 'Silahkan Login Terlebih Dahulu');
+            return redirect()->to(base_url('login'));
+        }
+        // membuat halaman otomatis berubah ketika berpindah halaman 
+        $currentPage = $this->request->getVar('page_daftarmarbot') ? $this->request->getVar('page_daftarmarbot') : 1;
+
+        // paginate
+        $paginate = 10000000;
+        $data['daftarmarbot']   = $this->marbot_model->join('daftarpengurus', 'daftarpengurus.idpengurus = daftarmarbot.idpengurus')->paginate($paginate, 'daftarmarbot');
+        $data['pager']        = $this->marbot_model->pager;
+        $data['currentPage']  = $currentPage;
+        echo view('daftarmarbot/laporan', $data);
+    }
+
 
 
     public function create()
@@ -57,14 +76,8 @@ class MarbotController extends BaseController
         }
         $validation =  \Config\Services::validation();
 
-        // // get file upload
-        // $image = $this->request->getFile('foto');
-        // // random name file
-        // $name = $image->getRandomName();
-
         $data = array(
             'idpengurus'        => $this->request->getPost('idpengurus'),
-            // 'foto'              => $name,
             'nama'              => $this->request->getPost('nama'),
             'alamat'            => $this->request->getPost('alamat'),
             'status'            => $this->request->getPost('status'),
@@ -78,28 +91,13 @@ class MarbotController extends BaseController
             session()->setFlashdata('errors', $validation->getErrors());
             return redirect()->to(base_url('daftarmarbot/create'));
         } else {
-            // upload file 
-            // $image->move(ROOTPATH . 'public/uploads/marbot', $name);
-            // insert
+
             $simpan = $this->marbot_model->insertData($data);
             if ($simpan) {
                 session()->setFlashdata('success', 'Created Daftar successfully');
                 return redirect()->to(base_url('daftarmarbot'));
             }
         }
-    }
-
-
-
-    public function show($id)
-    {
-        // proteksi halaman
-        if (session()->get('username') == '') {
-            session()->setFlashdata('haruslogin', 'Silahkan Login Terlebih Dahulu');
-            return redirect()->to(base_url('login'));
-        }
-        $data['daftarmarbot'] = $this->marbot_model->getData($id);
-        echo view('daftarmarbot/show', $data);
     }
 
     public function edit($id)
@@ -127,14 +125,9 @@ class MarbotController extends BaseController
 
         $validation =  \Config\Services::validation();
 
-        // get file
-        $image = $this->request->getFile('foto');
-        // random name file
-        $name = $image->getRandomName();
 
         $data = array(
             'idpengurus'        => $this->request->getPost('idpengurus'),
-            'foto'              => $name,
             'nama'              => $this->request->getPost('nama'),
             'alamat'            => $this->request->getPost('alamat'),
             'status'            => $this->request->getPost('status'),
@@ -148,8 +141,6 @@ class MarbotController extends BaseController
             session()->setFlashdata('errors', $validation->getErrors());
             return redirect()->to(base_url('daftarmarbot/edit/' . $id));
         } else {
-            // upload
-            $image->move(ROOTPATH . 'public/uploads/marbot', $name);
             // update
             $ubah = $this->marbot_model->updateData($data, $id);
             if ($ubah) {

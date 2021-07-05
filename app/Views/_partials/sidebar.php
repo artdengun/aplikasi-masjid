@@ -6,9 +6,6 @@
 
     <div class="sidebar">
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-            <!-- <div class="image">
-            <img src="dist/img/default-150x150.png" class="img-fluid" width="100">
-            </div> -->
             <div class="image">
                 <h6 style="color:azure"><?php if (session()->get('level') == 1) {
                                             echo 'DEVELOPER';
@@ -30,29 +27,17 @@
                         <p>Dashboard</p>
                     </a>
                 </li>
-                <li class="nav-header">Data Pengurus Dan Penyumbang</li>
+                <li class="nav-header">Data Jamaah</li>
 
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-dashcube"></i>
+                        <i class="nav-icon fas fa-users"></i>
                         <p>
-                            Pendataan Jamaah Masjid
+                            Data Jamaah Masjid
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
-                        <!-- <li class="nav-item">
-                            <a href="<?php echo base_url('/daftarzakat'); ?>" class="nav-link">
-                                <i class="fas fa-user nav-icon"></i>
-                                <p>Data Zakat</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="<?php echo base_url('/daftarmaal'); ?>" class="nav-link">
-                                <i class="fas fa-user nav-icon"></i>
-                                <p>Data Maal</p>
-                            </a>
-                        </li> -->
                         <li class="nav-item">
                             <a href="<?php echo base_url('/daftarynz'); ?>" class="nav-link">
                                 <i class="fas fa-user nav-icon"></i>
@@ -103,147 +88,68 @@
                         </li>
                     </ul>
                 </li>
-                <!-- 
+
+                <li class="nav-header">Laporan</li>
 
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-users"></i>
                         <p>
-                            Data Kegiatan Masjid
+                            Data Laporan Masjid
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="<?php echo base_url('/agenda'); ?>" class="nav-link">
+                            <a href="<?php echo base_url('/daftarynz/laporan'); ?>" class="nav-link">
                                 <i class="fas fa-user nav-icon"></i>
-                                <p> Agenda</p>
+                                <p>Laporan Yatim Janda</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo base_url('/berita'); ?>" class="nav-link">
+                            <a href="<?php echo base_url('/daftarpengurus/laporan'); ?>" class="nav-link">
                                 <i class="fas fa-user nav-icon"></i>
-                                <p>Berita</p>
+                                <p>Laporan Pengurus</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo base_url('/profil'); ?>" class="nav-link">
+                            <a href="<?php echo base_url('/daftarimam/laporan'); ?>" class="nav-link">
                                 <i class="fas fa-user nav-icon"></i>
-                                <p>Profil</p>
+                                <p>Laporan Imam</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                        <li class="nav-item">
-                            <a href="<?php echo base_url('/jadwal'); ?>" class="nav-link">
+                            <a href="<?php echo base_url('/daftarbilal/laporan'); ?>" class="nav-link">
                                 <i class="fas fa-user nav-icon"></i>
-                                <p>Jadwal</p>
+                                <p>Laporan Bilal</p>
                             </a>
                         </li>
-                        <a href="<?php echo base_url('/sampul'); ?>" class="nav-link">
-                            <i class="fas fa-user nav-icon"></i>
-                            <p>Sampul</p>
-                        </a>
+                        <li class="nav-item">
+                            <a href="<?php echo base_url('/daftarmarbot/laporan'); ?>" class="nav-link">
+                                <i class="fas fa-user nav-icon"></i>
+                                <p>Laporan Marbot</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?php echo base_url('/daftarmuazin/laporan'); ?>" class="nav-link">
+                                <i class="fas fa-user nav-icon"></i>
+                                <p>Laporan Muazin</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?php echo base_url('/daftarkhotib/laporan'); ?>" class="nav-link">
+                                <i class="fas fa-user nav-icon"></i>
+                                <p>Laporan Khotib</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?php echo base_url('/daftarremaja/laporan'); ?>" class="nav-link">
+                                <i class="fas fa-user nav-icon"></i>
+                                <p>Laporan Remaja</p>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
-               </ul> -->
-                </li>
-                <!-- <li class="nav-header">Data Terkait Content System</li>
-
-            <li class="nav-item has-treeview">
-                <a href="#" class="nav-link">
-                    <i class="nav-icon fas fa-users"></i>
-                    <p>
-                        Konten Website
-                        <i class="fas fa-angle-left right"></i>
-                    </p>
-                </a>
-                <ul class="nav nav-treeview">
-                    <li class="nav-item">
-                        <a href="<?php echo base_url('/'); ?>" class="nav-link">
-                            <i class="fas fa-user nav-icon"></i>
-                            <p>Data Zakat</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="<?php echo base_url('/'); ?>" class="nav-link">
-                            <i class="fas fa-user nav-icon"></i>
-                            <p>Data Maal</p>
-                        </a>
-                    </li>
-                </ul>
-            </li> -->
-                <!-- <li class="nav-header">Data Terkait Keuangan</li>
-            <li class="nav-item has-treeview">
-                <a href="#" class="nav-link">
-                    <i class="nav-icon fas fa-users"></i>
-                    <p>
-                        Pemasukan Masjid
-                        <i class="fas fa-angle-left right"></i>
-                    </p>
-                </a>
-                <ul class="nav nav-treeview">
-                    <li class="nav-item">
-                        <a href="<?php echo base_url('/'); ?>" class="nav-link">
-                            <i class="fas fa-user nav-icon"></i>
-                            <p>Penerimaan Qurban</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="<?php echo base_url('/'); ?>" class="nav-link">
-                            <i class="fas fa-user nav-icon"></i>
-                            <p>Penyaluran Qurban</p>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="nav-item has-treeview">
-                <a href="#" class="nav-link">
-                    <i class="nav-icon fas fa-dollar-sign"></i>
-                    <p>
-                        Pengeluaran Masjid
-                        <i class="fas fa-angle-left right"></i>
-                    </p>
-                </a>
-                <ul class="nav nav-treeview">
-                    <li class="nav-item">
-                        <a href="<?php echo base_url('/'); ?>" class="nav-link">
-                            <i class="fas fa-user nav-icon"></i>
-                            <p>Penerimaan Qurban</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="<?php echo base_url('/'); ?>" class="nav-link">
-                            <i class="fas fa-user nav-icon"></i>
-                            <p>Penyaluran Qurban</p>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-
-            <li class="nav-item has-treeview">
-                <a href="#" class="nav-link">
-                    <i class="nav-icon fas fa-users"></i>
-                    <p>
-                        Pendataan Qurban
-                        <i class="fas fa-angle-left right"></i>
-                    </p>
-                </a>
-                <ul class="nav nav-treeview">
-                    <li class="nav-item">
-                        <a href="<?php echo base_url('/'); ?>" class="nav-link">
-                            <i class="fas fa-user nav-icon"></i>
-                            <p>Penerimaan Qurban</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="<?php echo base_url('/'); ?>" class="nav-link">
-                            <i class="fas fa-user nav-icon"></i>
-                            <p>Penyaluran Qurban</p>
-                        </a>
-                    </li>
-                </ul>
-            </li> -->
                 <?php if (session()->get('level') == 1) { ?>
                     <li class="nav-item has-treeview">
                         <a href="#" class="nav-link">

@@ -4,18 +4,16 @@
 <div class="content-wrapper">
     <div class="content-header">
         <div class="container-fluid  text-center">
-            <marquee style="color: red;">
-                <p class="mb-2"><b>Untuk menjaga Keamanan data, Lakukan Pencadangan Data Secara Mandiri</b></p>
-            </marquee>
-
-            <h1 class="h3 mb-2 text-gray-800"> Data khotib Masjid Al-Hikmah Kp. payangan</h1>
-            <p class="mb-4">Data khotib yang dimasukan adalah data yang sudah valid dan sesuai dengan data internal masjid</p>
-
-            Alamat : <p><b>Jl. Wibawa Mukti II Jl. Diman, RT.004/RW.006, Jatisari, Kec. Jatiasih, Kota Bks, Jawa Barat 17426</b></p>
+            <p style="color:green;"> <b>Masjid Al-Hikmah Kampung Payangan <b /><br></p>
+            <h4><b><i>MANAGEMENT INFORMATION SYSTEM</i></b></h4>
+            <img src="<?php echo base_url('dist/img/logo.ico'); ?>" alt="gambar al-hikmah"> <br><br>
+            <h3 class="h3 mb-2 text-gray-800"> Data Khotib <br>
+            </h3>
+            <p class="mb-4">Update Data Secara Rutin Agar Konsistensi Data Akan Terjaga Dengan Baik</p>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="<?php echo base_url('/') ?>">Dashboard</a></li>
-                    <li class="breadcrumb-item" aria-current="page">Data khotib</li>
+                    <li class="breadcrumb-item"><a href="<?php echo base_url('/') ?>"> <i class="nav-icon fas  fa-mosque"></i> Dashboard</a></li>
+                    <li class="breadcrumb-item" aria-current="page"><i class="nav-icon fas  fa-user"></i> Data Khotib</li>
                 </ol>
             </nav>
         </div>
@@ -26,7 +24,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <a href="<?php echo base_url('daftarkhotib/create'); ?>" class="btn btn-primary float-right">Tambah Pengurus</a>
+                        <a href="<?php echo base_url('daftarkhotib/create'); ?>" class="btn btn-outline-success float-right">Tambah Data Khotib</a>
 
                     </div>
                     <!-- /.card-header -->
@@ -51,11 +49,10 @@
                         <?php } ?>
                         <div class="table-responsive">
 
-                            <table id="example1" class="table table-bordered table-striped">
+                            <table id="example2" class="table table-bordered table-striped">
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Foto</th>
                                         <th>Nama khotib</th>
                                         <th>Alamat</th>
                                         <th>status</th>
@@ -70,7 +67,6 @@
                                     <?php foreach ($daftarkhotib as $row) { ?>
                                         <tr>
                                             <td class="text-center"><?= $i++; ?></td>
-                                            <td><img src="<?= base_url('uploads/khotib/' . $row['foto']) ?>" class="rounded-circle" width="50" height="50"></td>
                                             <td><?php echo $row['nama']; ?></td>
                                             <td><?php echo $row['alamat']; ?></td>
                                             <td><?php echo $row['status']; ?></td>
@@ -93,7 +89,6 @@
                                 <tfoot>
                                     <tr>
                                         <th>No</th>
-                                        <th>Foto</th>
                                         <th>Nama khotib</th>
                                         <th>Alamat</th>
                                         <th>status</th>

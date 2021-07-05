@@ -30,11 +30,32 @@ class MuazinController extends BaseController
         $currentPage = $this->request->getVar('page_daftarmuazin') ? $this->request->getVar('page_daftarmuazin') : 1;
 
         // paginate
-        $paginate = 5;
+        $paginate = 10000000;
         $data['daftarmuazin']   = $this->muazin_model->join('daftarpengurus', 'daftarpengurus.idpengurus = daftarmuazin.idpengurus')->paginate($paginate, 'daftarmuazin');
         $data['pager']        = $this->muazin_model->pager;
         $data['currentPage']  = $currentPage;
         echo view('daftarmuazin/index', $data);
+    }
+
+
+    public function laporan()
+    {
+
+        // proteksi halaman
+        if (session()->get('username') == '') {
+            session()->setFlashdata('haruslogin', 'Silahkan Login Terlebih Dahulu');
+            return redirect()->to(base_url('login'));
+        }
+
+        // membuat halaman otomatis berubah ketika berpindah halaman 
+        $currentPage = $this->request->getVar('page_daftarmuazin') ? $this->request->getVar('page_daftarmuazin') : 1;
+
+        // paginate
+        $paginate = 10000000;
+        $data['daftarmuazin']   = $this->muazin_model->join('daftarpengurus', 'daftarpengurus.idpengurus = daftarmuazin.idpengurus')->paginate($paginate, 'daftarmuazin');
+        $data['pager']        = $this->muazin_model->pager;
+        $data['currentPage']  = $currentPage;
+        echo view('daftarmuazin/laporan', $data);
     }
 
 
@@ -84,19 +105,6 @@ class MuazinController extends BaseController
         }
     }
 
-
-
-    // public function show($id)
-    // {
-    //     // proteksi halaman
-    //     if (session()->get('username') == '') {
-    //         session()->setFlashdata('haruslogin', 'Silahkan Login Terlebih Dahulu');
-    //         return redirect()->to(base_url('login'));
-    //     }
-    //     $data['daftarmuazin'] = $this->muazin_model->getData($id);
-    //     echo view('daftarmuazin/show', $data);
-    // }
-
     public function edit($id)
     {
         // proteksi halaman
@@ -122,14 +130,9 @@ class MuazinController extends BaseController
 
         $validation =  \Config\Services::validation();
 
-        // get file
-        $image = $this->request->getFile('foto');
-        // random name file
-        $name = $image->getRandomName();
 
         $data = array(
             'idpengurus'        => $this->request->getPost('idpengurus'),
-            'foto'              => $name,
             'nama'              => $this->request->getPost('nama'),
             'alamat'            => $this->request->getPost('alamat'),
             'status'            => $this->request->getPost('status'),

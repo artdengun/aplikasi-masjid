@@ -10,8 +10,8 @@
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active">Dashboard</li>
+            <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"> Home </i></a></li>
+            <li class="breadcrumb-item active"><i class="fas fa-mosque"> Dashboard</i></li>
           </ol>
         </div>
       </div>
@@ -21,9 +21,9 @@
   <section class="content">
     <div class="container-fluid">
       <div class="col-lg-12">
-        <div class="card">
+        <div class="card shadow-lg">
           <div class="card-header">
-            <h5 class="m-0">Total Data Pengelola Masjid </h5>
+            <h5 class="m-0 text-center"> Data Jamaah Masjid </h5>
           </div>
           <div class="card-body">
             <div class="row">

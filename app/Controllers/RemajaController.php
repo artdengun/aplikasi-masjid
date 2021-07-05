@@ -27,13 +27,29 @@ class RemajaController extends BaseController
         // membuat halaman otomatis berubah ketika berpindah halaman 
         $currentPage = $this->request->getVar('page_daftarremaja') ? $this->request->getVar('page_daftarremaja') : 1;
         // paginate
-        $paginate = 5;
+        $paginate = 10000000;
         $data['daftarremaja']   = $this->remaja_model->join('daftarpengurus', 'daftarpengurus.idpengurus = daftarremaja.idpengurus')->paginate($paginate, 'daftarremaja');
         $data['pager']        = $this->remaja_model->pager;
         $data['currentPage']  = $currentPage;
         echo view('daftarremaja/index', $data);
     }
 
+    public function laporan()
+    {
+        // proteksi halaman
+        if (session()->get('username') == '') {
+            session()->setFlashdata('haruslogin', 'Silahkan Login Terlebih Dahulu');
+            return redirect()->to(base_url('login'));
+        }
+        // membuat halaman otomatis berubah ketika berpindah halaman 
+        $currentPage = $this->request->getVar('page_daftarremaja') ? $this->request->getVar('page_daftarremaja') : 1;
+        // paginate
+        $paginate = 10000000;
+        $data['daftarremaja']   = $this->remaja_model->join('daftarpengurus', 'daftarpengurus.idpengurus = daftarremaja.idpengurus')->paginate($paginate, 'daftarremaja');
+        $data['pager']        = $this->remaja_model->pager;
+        $data['currentPage']  = $currentPage;
+        echo view('daftarremaja/laporan', $data);
+    }
 
     public function create()
     {
@@ -80,19 +96,6 @@ class RemajaController extends BaseController
             }
         }
     }
-
-
-
-    // public function show($id)
-    // {
-    //     // proteksi halaman
-    //     if (session()->get('username') == '') {
-    //         session()->setFlashdata('haruslogin', 'Silahkan Login Terlebih Dahulu');
-    //         return redirect()->to(base_url('login'));
-    //     }
-    //     $data['daftarremaja'] = $this->remaja_model->getData($id);
-    //     echo view('daftarremaja/show', $data);
-    // }
 
     public function edit($id)
     {

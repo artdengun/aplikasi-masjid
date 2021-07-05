@@ -15,17 +15,12 @@ class Daftarremaja extends Migration
 				'unsigned'			=> TRUE,
 				'auto_increment'	=> TRUE
 			],
-			'foto'					=> [
-				'type'				=> 'VARCHAR',
-				'constraint'		=> '255',
-				'null'				=> true
-				],
 			'nama'					=> [
 				'type'				=> 'VARCHAR',
 				'constraint'		=> '255'
 			],
 
-			'alamat'				=>[
+			'alamat'				=> [
 				'type'				=> 'VARCHAR',
 				'constraint'		=> '1000'
 			],
@@ -50,7 +45,7 @@ class Daftarremaja extends Migration
 		]);
 
 		$this->forge->addKey('idremaja', true);
-		$this->forge->addForeignKey('idpengurus','daftarpengurus','idpengurus','cascade','cascade');
+		$this->forge->addForeignKey('idpengurus', 'daftarpengurus', 'idpengurus', 'cascade', 'cascade');
 		$this->forge->createTable('daftarremaja');
 	}
 

@@ -248,11 +248,7 @@ class Validation
 			'required'		=> 'Pengurus Wajib Di isi'
 		],
 
-		// 'foto'     			=> [
-		// 	'mime_in'   => 'Gambar muazin hanya boleh diisi dengan jpg, jpeg, png atau gif.',
-		// 	'max_size'  => 'Gambar muazin maksimal 2mb',
-		// 	'uploaded'  => 'Gambar muazin wajib diisi'
-		// ],
+
 
 		'nama'     			=> [
 			'required'		=> 'Data nama Wajib Di isi'
@@ -271,73 +267,6 @@ class Validation
 		],
 	];
 
-
-	// validasi untuk daftar maal 
-	public $daftarmaal = [
-		'idpengurus'		=> 'required',
-		'nama'     			=> 'required',
-		'alamat'     		=> 'required',
-		'status'   			=> 'required',
-		'handphone'   		=> 'required',
-		'tahun'   			=> 'required',
-
-	];
-
-	public $daftarmaal_errors = [
-
-		'idpengurus'     	=> [
-			'required'		=> 'Pengurus Wajib Di isi'
-		],
-		'nama'     			=> [
-			'required'		=> 'Data nama Wajib Di isi'
-		],
-		'alamat'   		=> [
-			'required'		=> 'Data Alamat Wajib Di isi'
-		],
-		'status'   			=>  [
-			'required'		=> ' Data Status Wajib Di isi'
-		],
-		'handphone'   		=>  [
-			'required'		=> 'Data Handphone  Wajib Di isi'
-		],
-		'tahun'   		=>  [
-			'required'		=> 'Data Tahun Wajib Di isi'
-		],
-	];
-
-
-	// validasi untuk daftar zakat 
-	public $daftarzakat = [
-		'idpengurus'		=> 'required',
-		'nama'     			=> 'required',
-		'alamat'     		=> 'required',
-		'status'   			=> 'required',
-		'handphone'   		=> 'required',
-		'tahun'   			=> 'required',
-
-	];
-
-	public $daftarzakat_errors = [
-
-		'idpengurus'     	=> [
-			'required'		=> 'Pengurus Wajib Di isi'
-		],
-		'nama'     			=> [
-			'required'		=> 'Data nama Wajib Di isi'
-		],
-		'alamat'   		=> [
-			'required'		=> 'Data Alamat Wajib Di isi'
-		],
-		'status'   			=>  [
-			'required'		=> ' Data Status Wajib Di isi'
-		],
-		'handphone'   		=>  [
-			'required'		=> 'Data Handphone  Wajib Di isi'
-		],
-		'tahun'   		=>  [
-			'required'		=> 'Data Tahun Wajib Di isi'
-		],
-	];
 
 
 	// validasi untuk daftar yatim dan zompo 
@@ -373,72 +302,6 @@ class Validation
 		],
 	];
 
-
-	// validasi untuk Agenda
-	public $agenda = [
-		'idpengurus'			=> 'required',
-		'nama'     			 	=> 'required',
-		'tanggal'     			=> 'required',
-		'tempat'   				=> 'required',
-		'keterangan'   			=> 'required',
-		'tgl_post'   			=> 'required',
-	];
-
-	public $agenda_errors = [
-
-		'idpengurus'     	=> [
-			'required'		=> 'Pengurus wajib Di isi'
-		],
-
-		'nama'     			=> [
-			'required'		=> 'Data nama Wajib Di isi'
-		],
-		'tanggal'   		=> [
-			'required'		=> 'Data tanggal Wajib Di isi'
-		],
-		'tempat'   			=>  [
-			'required'		=> 'Data Tempat Acara Wajib Di isi'
-		],
-		'keterangan'   			=>  [
-			'required'		=> 'Data Keterangan Wajib Di isi'
-		],
-		'tgl_post'   			=>  [
-			'required'		=> 'Data Post Acara Wajib Di isi'
-		]
-	];
-
-	// validasi untuk daftar Muazin 
-	public $berita = [
-		'idpengurus'		=> 'required',
-		'gambar'				=> 'uploaded[gambar]|mime_in[gambar,image/jpg,image/jpeg,image/gif,image/png]|max_size[gambar,2000]',
-		'judul'     			=> 'required',
-		'isi'     		=> 'required',
-		'tanggal'   			=> 'required',
-
-	];
-
-	public $berita_errors = [
-
-		'idpengurus'     	=> [
-			'required'		=> 'Pengurus Wajib Di isi'
-		],
-
-		'gambar'     			=> [
-			'mime_in'   => 'Gambar berita hanya boleh diisi dengan jpg, jpeg, png atau gif.',
-			'max_size'  => 'Gambar berita maksimal 2mb',
-			'uploaded'  => 'Gambar berita wajib diisi'
-		],
-
-		'judul'     			=> [
-			'required'		=> 'Data judul Wajib Di isi'
-		],
-		'isi'   		=> [
-			'required'		=> 'Data Isi Wajib Di isi'
-		],
-		'tanggal'   			=>  [
-			'required'		=> ' Data Tanggal Wajib Di isi'
-		],
-	];
 
 
 	// validasi untuk daftar users 
