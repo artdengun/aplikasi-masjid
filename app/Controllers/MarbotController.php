@@ -29,18 +29,14 @@ class MarbotController extends BaseController
 
         // paginate
         $paginate = 10000000;
-        //$data['daftarmarbot']   = $this->marbot_model->join('daftarpengurus', 'daftarpengurus.idpengurus = daftarmarbot.idpengurus')->paginate($paginate, 'daftarmarbot');
-        //$data['pager']        = $this->marbot_model->pager;
-        //$data['currentPage']  = $currentPage;
-        //echo view('daftarmarbot/index', $data);
-        
+
         $data = [
-          'daftarmarbot'      => $this->marbot_model->join('daftarpengurus', 'daftarpengurus.idpengurus = daftarmarbot.idpengurus')->paginate($paginate, 'daftarmarbot'),
-          'pager'          => $this->marbot_model->pager,
-          'currentPage'    => $currentPage,
-          'tahun'          => $this->marbot_model->getTahun()
+            'daftarmarbot'      => $this->marbot_model->join('daftarpengurus', 'daftarpengurus.idpengurus = daftarmarbot.idpengurus')->paginate($paginate, 'daftarmarbot'),
+            'pager'          => $this->marbot_model->pager,
+            'currentPage'    => $currentPage,
+            'tahun'          => $this->marbot_model->getTahun()
         ];
-        
+
         return view('daftarmarbot/laporan', $data);
     }
 
@@ -60,14 +56,14 @@ class MarbotController extends BaseController
         //$data['pager']        = $this->marbot_model->pager;
         //$data['currentPage']  = $currentPage;
         //echo view('daftarmarbot/laporan', $data);
-        
+
         $data = [
-          'daftarmarbot'      => $this->marbot_model->join('daftarpengurus', 'daftarpengurus.idpengurus = daftarmarbot.idpengurus')->paginate($paginate, 'daftarmarbot'),
-          'pager'          => $this->marbot_model->pager,
-          'currentPage'    => $currentPage,
-          'tahun'          => $this->marbot_model->getTahun()
+            'daftarmarbot'      => $this->marbot_model->join('daftarpengurus', 'daftarpengurus.idpengurus = daftarmarbot.idpengurus')->paginate($paginate, 'daftarmarbot'),
+            'pager'          => $this->marbot_model->pager,
+            'currentPage'    => $currentPage,
+            'tahun'          => $this->marbot_model->getTahun()
         ];
-        
+
         return view('daftarmarbot/laporan', $data);
     }
 
@@ -181,44 +177,43 @@ class MarbotController extends BaseController
             return redirect()->to(base_url('daftarmarbot'));
         }
     }
-    
+
     public function filter()
     {
-      $tanggalAwal     = $this->request->getPost('tanggalAwal');
-      $tanggalAkhir    = $this->request->getPost('tanggalAkhir');
-      $bulanAwal       = $this->request->getPost('bulanAwal');
-      $bulanAkhir      = $this->request->getPost('bulanAkhir');
-      $tahun1          = $this->request->getPost('tahun1');
-      $tahun2          = $this->request->getPost('tahun2');
-      $filter          = $this->request->getPost('filter');
-      
-      $currentPage = $this->request->getVar('page_daftarmarbot') ? $this->request->getVar('page_daftarmarbot') : 1;
-      
-      if ($filter == 1) {
-        
-        $data = [
-          'currentPage'     => $currentPage,
-          'datafilter'      => $this->marbot_model->filterByTanggal($tanggalAwal, $tanggalAkhir)
-        ];
-        
-        return view('daftarmarbot/laporanByFilter', $data);
-      } elseif ($filter == 2) {
-        
-        $data = [
-          'currentPage'     => $currentPage,
-          'datafilter'      => $this->marbot_model->filterByaBulan($tahun1, $bulanAwal, $bulanAkhir)
-        ];
-        
-        return view('daftarmarbot/laporanByFilter', $data);
-      } elseif ($filter == 3) {
-        
-        $data = [
-          'currentPage'     => $currentPage,
-          'datafilter'      => $this->marbot_model->filterByaTahun($tahun2)
-        ];
-        
-        return view('daftarmarbot/laporanByFilter', $data);
-      }
-      
+        $tanggalAwal     = $this->request->getPost('tanggalAwal');
+        $tanggalAkhir    = $this->request->getPost('tanggalAkhir');
+        $bulanAwal       = $this->request->getPost('bulanAwal');
+        $bulanAkhir      = $this->request->getPost('bulanAkhir');
+        $tahun1          = $this->request->getPost('tahun1');
+        $tahun2          = $this->request->getPost('tahun2');
+        $filter          = $this->request->getPost('filter');
+
+        $currentPage = $this->request->getVar('page_daftarmarbot') ? $this->request->getVar('page_daftarmarbot') : 1;
+
+        if ($filter == 1) {
+
+            $data = [
+                'currentPage'     => $currentPage,
+                'datafilter'      => $this->marbot_model->filterByTanggal($tanggalAwal, $tanggalAkhir)
+            ];
+
+            return view('daftarmarbot/laporanByFilter', $data);
+        } elseif ($filter == 2) {
+
+            $data = [
+                'currentPage'     => $currentPage,
+                'datafilter'      => $this->marbot_model->filterByaBulan($tahun1, $bulanAwal, $bulanAkhir)
+            ];
+
+            return view('daftarmarbot/laporanByFilter', $data);
+        } elseif ($filter == 3) {
+
+            $data = [
+                'currentPage'     => $currentPage,
+                'datafilter'      => $this->marbot_model->filterByaTahun($tahun2)
+            ];
+
+            return view('daftarmarbot/laporanByFilter', $data);
+        }
     }
 }

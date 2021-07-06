@@ -52,18 +52,14 @@ class MuazinController extends BaseController
 
         // paginate
         $paginate = 10000000;
-        //$data['daftarmuazin']   = $this->muazin_model->join('daftarpengurus', 'daftarpengurus.idpengurus = daftarmuazin.idpengurus')->paginate($paginate, 'daftarmuazin');
-        //$data['pager']        = $this->muazin_model->pager;
-        //$data['currentPage']  = $currentPage;
-        //echo view('daftarmuazin/laporan', $data);
-        
+
         $data = [
-          'daftarmuazin'    => $this->muazin_model->join('daftarpengurus','daftarpengurus.idpengurus = daftarmuazin.idpengurus')->paginate($paginate, 'daftarmuazin'),
-          'pager'           => $this->muazin_model->pager,
-          'currentPage'     => $currentPage,
-          'tahun'           => $this->muazin_model->getTahun()
+            'daftarmuazin'    => $this->muazin_model->join('daftarpengurus', 'daftarpengurus.idpengurus = daftarmuazin.idpengurus')->paginate($paginate, 'daftarmuazin'),
+            'pager'           => $this->muazin_model->pager,
+            'currentPage'     => $currentPage,
+            'tahun'           => $this->muazin_model->getTahun()
         ];
-        
+
         return view('daftarmuazin/laporan', $data);
     }
 
@@ -178,44 +174,43 @@ class MuazinController extends BaseController
             return redirect()->to(base_url('daftarmuazin'));
         }
     }
-    
+
     public function filter()
     {
-      $tanggalAwal     = $this->request->getPost('tanggalAwal');
-      $tanggalAkhir    = $this->request->getPost('tanggalAkhir');
-      $bulanAwal       = $this->request->getPost('bulanAwal');
-      $bulanAkhir      = $this->request->getPost('bulanAkhir');
-      $tahun1          = $this->request->getPost('tahun1');
-      $tahun2          = $this->request->getPost('tahun2');
-      $filter          = $this->request->getPost('filter');
-      
-      $currentPage = $this->request->getVar('page_daftarmuazin') ? $this->request->getVar('page_daftarmuazin') : 1;
-      
-      if ($filter == 1) {
-        
-        $data = [
-          'currentPage'     => $currentPage,
-          'datafilter'      => $this->muazin_model->filterByTanggal($tanggalAwal, $tanggalAkhir)
-        ];
-        
-        return view('daftarmuazin/laporanByFilter', $data);
-      } elseif ($filter == 2) {
-        
-        $data = [
-          'currentPage'     => $currentPage,
-          'datafilter'      => $this->muazin_model->filterByaBulan($tahun1, $bulanAwal, $bulanAkhir)
-        ];
-        
-        return view('daftarmuazin/laporanByFilter', $data);
-      } elseif ($filter == 3) {
-        
-        $data = [
-          'currentPage'     => $currentPage,
-          'datafilter'      => $this->muazin_model->filterByaTahun($tahun2)
-        ];
-        
-        return view('daftarmuazin/laporanByFilter', $data);
-      }
-      
+        $tanggalAwal     = $this->request->getPost('tanggalAwal');
+        $tanggalAkhir    = $this->request->getPost('tanggalAkhir');
+        $bulanAwal       = $this->request->getPost('bulanAwal');
+        $bulanAkhir      = $this->request->getPost('bulanAkhir');
+        $tahun1          = $this->request->getPost('tahun1');
+        $tahun2          = $this->request->getPost('tahun2');
+        $filter          = $this->request->getPost('filter');
+
+        $currentPage = $this->request->getVar('page_daftarmuazin') ? $this->request->getVar('page_daftarmuazin') : 1;
+
+        if ($filter == 1) {
+
+            $data = [
+                'currentPage'     => $currentPage,
+                'datafilter'      => $this->muazin_model->filterByTanggal($tanggalAwal, $tanggalAkhir)
+            ];
+
+            return view('daftarmuazin/laporanByFilter', $data);
+        } elseif ($filter == 2) {
+
+            $data = [
+                'currentPage'     => $currentPage,
+                'datafilter'      => $this->muazin_model->filterByaBulan($tahun1, $bulanAwal, $bulanAkhir)
+            ];
+
+            return view('daftarmuazin/laporanByFilter', $data);
+        } elseif ($filter == 3) {
+
+            $data = [
+                'currentPage'     => $currentPage,
+                'datafilter'      => $this->muazin_model->filterByaTahun($tahun2)
+            ];
+
+            return view('daftarmuazin/laporanByFilter', $data);
+        }
     }
 }

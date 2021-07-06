@@ -45,18 +45,14 @@ class RemajaController extends BaseController
         $currentPage = $this->request->getVar('page_daftarremaja') ? $this->request->getVar('page_daftarremaja') : 1;
         // paginate
         $paginate = 10000000;
-        //$data['daftarremaja']   = $this->remaja_model->join('daftarpengurus', 'daftarpengurus.idpengurus = daftarremaja.idpengurus')->paginate($paginate, 'daftarremaja');
-        //$data['pager']        = $this->remaja_model->pager;
-        //$data['currentPage']  = $currentPage;
-        //echo view('daftarremaja/laporan', $data);
-        
+
         $data = [
-          'daftarremaja'    => $this->remaja_model->join('daftarpengurus', 'daftarpengurus.idpengurus = daftarremaja.idpengurus')->paginate($paginate, 'daftarremaja'),
-          'pager'           => $this->remaja_model->pager,
-          'currentPage'     => $currentPage,
-          'tahun'           => $this->remaja_model->getTahun()
+            'daftarremaja'    => $this->remaja_model->join('daftarpengurus', 'daftarpengurus.idpengurus = daftarremaja.idpengurus')->paginate($paginate, 'daftarremaja'),
+            'pager'           => $this->remaja_model->pager,
+            'currentPage'     => $currentPage,
+            'tahun'           => $this->remaja_model->getTahun()
         ];
-        
+
         return view('daftarremaja/laporan', $data);
     }
 
@@ -169,44 +165,43 @@ class RemajaController extends BaseController
             return redirect()->to(base_url('daftarremaja'));
         }
     }
-    
+
     public function filter()
     {
-      $tanggalAwal     = $this->request->getPost('tanggalAwal');
-      $tanggalAkhir    = $this->request->getPost('tanggalAkhir');
-      $bulanAwal       = $this->request->getPost('bulanAwal');
-      $bulanAkhir      = $this->request->getPost('bulanAkhir');
-      $tahun1          = $this->request->getPost('tahun1');
-      $tahun2          = $this->request->getPost('tahun2');
-      $filter          = $this->request->getPost('filter');
-      
-      $currentPage = $this->request->getVar('page_daftarremaja') ? $this->request->getVar('page_daftarremaja') : 1;
-      
-      if ($filter == 1) {
-        
-        $data = [
-          'currentPage'     => $currentPage,
-          'datafilter'      => $this->remaja_model->filterByTanggal($tanggalAwal, $tanggalAkhir)
-        ];
-        
-        return view('daftarremaja/laporanByFilter', $data);
-      } elseif ($filter == 2) {
-        
-        $data = [
-          'currentPage'     => $currentPage,
-          'datafilter'      => $this->remaja_model->filterByaBulan($tahun1, $bulanAwal, $bulanAkhir)
-        ];
-        
-        return view('daftarremaja/laporanByFilter', $data);
-      } elseif ($filter == 3) {
-        
-        $data = [
-          'currentPage'     => $currentPage,
-          'datafilter'      => $this->remaja_model->filterByaTahun($tahun2)
-        ];
-        
-        return view('daftarremaja/laporanByFilter', $data);
-      }
-      
+        $tanggalAwal     = $this->request->getPost('tanggalAwal');
+        $tanggalAkhir    = $this->request->getPost('tanggalAkhir');
+        $bulanAwal       = $this->request->getPost('bulanAwal');
+        $bulanAkhir      = $this->request->getPost('bulanAkhir');
+        $tahun1          = $this->request->getPost('tahun1');
+        $tahun2          = $this->request->getPost('tahun2');
+        $filter          = $this->request->getPost('filter');
+
+        $currentPage = $this->request->getVar('page_daftarremaja') ? $this->request->getVar('page_daftarremaja') : 1;
+
+        if ($filter == 1) {
+
+            $data = [
+                'currentPage'     => $currentPage,
+                'datafilter'      => $this->remaja_model->filterByTanggal($tanggalAwal, $tanggalAkhir)
+            ];
+
+            return view('daftarremaja/laporanByFilter', $data);
+        } elseif ($filter == 2) {
+
+            $data = [
+                'currentPage'     => $currentPage,
+                'datafilter'      => $this->remaja_model->filterByaBulan($tahun1, $bulanAwal, $bulanAkhir)
+            ];
+
+            return view('daftarremaja/laporanByFilter', $data);
+        } elseif ($filter == 3) {
+
+            $data = [
+                'currentPage'     => $currentPage,
+                'datafilter'      => $this->remaja_model->filterByaTahun($tahun2)
+            ];
+
+            return view('daftarremaja/laporanByFilter', $data);
+        }
     }
 }

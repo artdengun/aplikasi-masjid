@@ -47,15 +47,12 @@ class PengurusController extends BaseController
 
         // paginate
         $paginate = 10000000;
-        //$data['daftarpengurus'] = $this->pengurus_model->paginate($paginate, 'daftarpengurus');
-        //$data['pager']          = $this->pengurus_model->pager;
-        //$data['currentPage']    = $currentPage;
-        
+
         $data = [
-          'daftarpengurus'    => $this->pengurus_model->paginate($paginate, 'daftarpengurus'),
-          'pager'             => $this->pengurus_model->pager,
-          'currentPage'       => $currentPage,
-          'tahun'             => $this->pengurus_model->getTahun()
+            'daftarpengurus'    => $this->pengurus_model->paginate($paginate, 'daftarpengurus'),
+            'pager'             => $this->pengurus_model->pager,
+            'currentPage'       => $currentPage,
+            'tahun'             => $this->pengurus_model->getTahun()
         ];
 
 
@@ -174,41 +171,38 @@ class PengurusController extends BaseController
             return redirect()->to(base_url('daftarpengurus'));
         }
     }
-    
+
     public function filter()
     {
-      $tanggalAwal     = $this->request->getPost('tanggalAwal');
-      $tanggalAkhir    = $this->request->getPost('tanggalAkhir');
-      $bulanAwal       = $this->request->getPost('bulanAwal');
-      $bulanAkhir      = $this->request->getPost('bulanAkhir');
-      $tahun1          = $this->request->getPost('tahun1');
-      $tahun2          = $this->request->getPost('tahun2');
-      $filter          = $this->request->getPost('filter');
-      
-      if ($filter == 1) {
-        
-        $data = [
-          'datafilter'      => $this->pengurus_model->filterByTanggal($tanggalAwal, $tanggalAkhir)
-        ];
-        
-        return view('daftarpengurus/laporanByFilter', $data);
-      } elseif ($filter == 2) {
-        
-        $data = [
-          'datafilter'      => $this->pengurus_model->filterByaBulan($tahun1, $bulanAwal, $bulanAkhir)
-        ];
-        
-        return view('daftarpengurus/laporanByFilter', $data);
-      } elseif ($filter == 3) {
-        
-        $data = [
-          'datafilter'      => $this->pengurus_model->filterByaTahun($tahun2)
-        ];
-        
-        return view('daftarpengurus/laporanByFilter', $data);
-      }
-      
-      
-    }
+        $tanggalAwal     = $this->request->getPost('tanggalAwal');
+        $tanggalAkhir    = $this->request->getPost('tanggalAkhir');
+        $bulanAwal       = $this->request->getPost('bulanAwal');
+        $bulanAkhir      = $this->request->getPost('bulanAkhir');
+        $tahun1          = $this->request->getPost('tahun1');
+        $tahun2          = $this->request->getPost('tahun2');
+        $filter          = $this->request->getPost('filter');
 
+        if ($filter == 1) {
+
+            $data = [
+                'datafilter'      => $this->pengurus_model->filterByTanggal($tanggalAwal, $tanggalAkhir)
+            ];
+
+            return view('daftarpengurus/laporanByFilter', $data);
+        } elseif ($filter == 2) {
+
+            $data = [
+                'datafilter'      => $this->pengurus_model->filterByaBulan($tahun1, $bulanAwal, $bulanAkhir)
+            ];
+
+            return view('daftarpengurus/laporanByFilter', $data);
+        } elseif ($filter == 3) {
+
+            $data = [
+                'datafilter'      => $this->pengurus_model->filterByaTahun($tahun2)
+            ];
+
+            return view('daftarpengurus/laporanByFilter', $data);
+        }
+    }
 }

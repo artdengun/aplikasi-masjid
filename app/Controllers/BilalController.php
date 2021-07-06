@@ -48,18 +48,14 @@ class BilalController extends BaseController
 
         // paginate
         $paginate = 10000000;
-        //$data['daftarbilal']   = $this->bilal_model->join('daftarpengurus', 'daftarpengurus.idpengurus = daftarbilal.idpengurus')->paginate($paginate, 'daftarbilal');
-        //$data['pager']        = $this->bilal_model->pager;
-        //$data['currentPage']  = $currentPage;
-        //echo view('daftarbilal/laporan', $data);
-        
+
         $data = [
-          'daftarbilal'      => $this->bilal_model->join('daftarpengurus', 'daftarpengurus.idpengurus = daftarbilal.idpengurus')->paginate($paginate, 'daftarbilal'),
-          'pager'          => $this->bilal_model->pager,
-          'currentPage'    => $currentPage,
-          'tahun'          => $this->bilal_model->getTahun()
+            'daftarbilal'      => $this->bilal_model->join('daftarpengurus', 'daftarpengurus.idpengurus = daftarbilal.idpengurus')->paginate($paginate, 'daftarbilal'),
+            'pager'          => $this->bilal_model->pager,
+            'currentPage'    => $currentPage,
+            'tahun'          => $this->bilal_model->getTahun()
         ];
-        
+
         return view('daftarbilal/laporan', $data);
     }
 
@@ -173,45 +169,43 @@ class BilalController extends BaseController
             return redirect()->to(base_url('daftarbilal'));
         }
     }
-    
+
     public function filter()
     {
-      $tanggalAwal     = $this->request->getPost('tanggalAwal');
-      $tanggalAkhir    = $this->request->getPost('tanggalAkhir');
-      $bulanAwal       = $this->request->getPost('bulanAwal');
-      $bulanAkhir      = $this->request->getPost('bulanAkhir');
-      $tahun1          = $this->request->getPost('tahun1');
-      $tahun2          = $this->request->getPost('tahun2');
-      $filter          = $this->request->getPost('filter');
-      
-      $currentPage = $this->request->getVar('page_daftarbilal') ? $this->request->getVar('page_daftarbilal') : 1;
-      
-      if ($filter == 1) {
-        
-        $data = [
-          'currentPage'     => $currentPage,
-          'datafilter'      => $this->bilal_model->filterByTanggal($tanggalAwal, $tanggalAkhir)
-        ];
-        
-        return view('daftarbilal/laporanByFilter', $data);
-      } elseif ($filter == 2) {
-        
-        $data = [
-          'currentPage'     => $currentPage,
-          'datafilter'      => $this->bilal_model->filterByaBulan($tahun1, $bulanAwal, $bulanAkhir)
-        ];
-        
-        return view('daftarbilal/laporanByFilter', $data);
-      } elseif ($filter == 3) {
-        
-        $data = [
-          'currentPage'     => $currentPage,
-          'datafilter'      => $this->bilal_model->filterByaTahun($tahun2)
-        ];
-        
-        return view('daftarbilal/laporanByFilter', $data);
-      }
-      
-      
+        $tanggalAwal     = $this->request->getPost('tanggalAwal');
+        $tanggalAkhir    = $this->request->getPost('tanggalAkhir');
+        $bulanAwal       = $this->request->getPost('bulanAwal');
+        $bulanAkhir      = $this->request->getPost('bulanAkhir');
+        $tahun1          = $this->request->getPost('tahun1');
+        $tahun2          = $this->request->getPost('tahun2');
+        $filter          = $this->request->getPost('filter');
+
+        $currentPage = $this->request->getVar('page_daftarbilal') ? $this->request->getVar('page_daftarbilal') : 1;
+
+        if ($filter == 1) {
+
+            $data = [
+                'currentPage'     => $currentPage,
+                'datafilter'      => $this->bilal_model->filterByTanggal($tanggalAwal, $tanggalAkhir)
+            ];
+
+            return view('daftarbilal/laporanByFilter', $data);
+        } elseif ($filter == 2) {
+
+            $data = [
+                'currentPage'     => $currentPage,
+                'datafilter'      => $this->bilal_model->filterByaBulan($tahun1, $bulanAwal, $bulanAkhir)
+            ];
+
+            return view('daftarbilal/laporanByFilter', $data);
+        } elseif ($filter == 3) {
+
+            $data = [
+                'currentPage'     => $currentPage,
+                'datafilter'      => $this->bilal_model->filterByaTahun($tahun2)
+            ];
+
+            return view('daftarbilal/laporanByFilter', $data);
+        }
     }
 }
