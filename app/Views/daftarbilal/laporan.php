@@ -20,6 +20,116 @@
     </div>
     <section class="content">
         <div class="row">
+          <div class="row ms-2 mb-3">
+                <div class="col-md-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" onclick="filterCheck()" name="group1" value="" id="checkByTanggal">
+                    <label class="form-check-label" for="checkByTanggal">
+                      Berdasarkan Tanggal
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" onclick="filterCheck()" name="group1" value="" id="checkByBulan">
+                    <label class="form-check-label" for="checkByBulan">
+                      Berdasarkan Bulan
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" onclick="filterCheck()" name="group1" value="" id="checkByTahun">
+                    <label class="form-check-label" for="checkByTahun">
+                      Berdasarkan Tahun
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row ms-2">
+                <div class="col-md-4" id="selectedTanggal" style="display: none;">
+                  <form action="<?= base_url() ?>/BilalController/filter" method="post">
+                    <input value="1" type="hidden" name="filter">
+                    <label class="form-label">Tanggal</label>
+                    <div class="input-group mb-3">
+                      <input type="date" class="form-control" name="tanggalAwal" required>
+                      <span class="input-group-text">s/d</span>
+                      <input type="date" class="form-control" name="tanggalAkhir" required>
+                    </div>
+                    <input class="btn btn-secondary" type="submit" value="Proses">
+                  </form>
+                </div>
+                <div class="col-md-4" id="selectedBulan" style="display: none;">
+                  <form action="<?= base_url() ?>/BilalController/filter" method="post">
+                    <input value="2" type="hidden" name="filter">
+                    <label class="form-label">Tahun</label>
+                    <select class="form-select" name="tahun1" required>
+                      <option selected>-Tahun-</option>
+                      
+                      <?php foreach($tahun as $y) : ?>
+                        <option value="<?= $y->tahun ?>"><?= $y->tahun ?></option>
+                      <?php endforeach; ?>
+                      
+                    </select>
+                    
+                    <label class="form-label">Dari Bulan</label>
+                    <select class="form-select" name="bulanAwal" required>
+                      <option selected>-Bulan Awal-</option>
+                      
+                      <option value="1">Januari</option>
+                      <option value="2">Februari</option>
+                      <option value="3">Maret</option>
+                      <option value="4">April</option>
+                      <option value="5">Mei</option>
+                      <option value="6">Juni</option>
+                      <option value="7">Juli</option>
+                      <option value="8">Agustus</option>
+                      <option value="9">September</option>
+                      <option value="10">Oktober</option>
+                      <option value="11">November</option>
+                      <option value="12">Desember</option>
+                      
+                    </select>
+                    
+                    <label class="form-label">Sampai Bulan</label>
+                    <select class="form-select mb-3" name="bulanAkhir" required>
+                      <option selected>-Bulan Akhir-</option>
+                      
+                      <option value="1">Januari</option>
+                      <option value="2">Februari</option>
+                      <option value="3">Maret</option>
+                      <option value="4">April</option>
+                      <option value="5">Mei</option>
+                      <option value="6">Juni</option>
+                      <option value="7">Juli</option>
+                      <option value="8">Agustus</option>
+                      <option value="9">September</option>
+                      <option value="10">Oktober</option>
+                      <option value="11">November</option>
+                      <option value="12">Desember</option>
+                      
+                    </select>
+                    
+                    <input class="btn btn-secondary" type="submit" value="Proses">
+                  </form>
+                </div>
+                <div class="col-md-4" id="selectedTahun" style="display: none;">
+                  <form action="<?= base_url() ?>/BilalController/filter" method="post">
+                    <input value="3" type="hidden" name="filter">
+                    <label class="form-label">Tahun</label>
+                    <select class="form-select mb-3" name="tahun2" required>
+                      <option selected>-Tahun-</option>
+                      
+                      <?php foreach($tahun as $y) : ?>
+                        <option value="<?= $y->tahun ?>"><?= $y->tahun ?></option>
+                      <?php endforeach; ?>
+                      
+                    </select>
+                    
+                    <input class="btn btn-secondary" type="submit" value="Proses">
+                  </form>
+                </div>
+              </div>
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
@@ -47,7 +157,7 @@
                                     <?php foreach ($daftarbilal as $row) { ?>
                                         <tr>
                                             <td class="text-center"><?= $i++; ?></td>
-                                            <!-- <td><img src="<?= base_url('uploads/bilal/' . $row['foto']) ?>" class="rounded-circle" width="50" height="50"></td> -->
+                                            <!-- <td><img src="?= base_url('uploads/bilal/' . $row['foto']) ?>" class="rounded-circle" width="50" height="50"></td> -->
                                             <td><?php echo $row['nama']; ?></td>
                                             <td><?php echo $row['alamat']; ?></td>
                                             <td><?php echo $row['status']; ?></td>
@@ -77,8 +187,43 @@
                 <!-- /.col -->
             </div>
             <!-- /.row -->
+        </div>
     </section>
 </div>
 
+<script>
+  
+  function filterCheck()
+  {
+    var cTgl = document.getElementById('checkByTanggal')
+    var cBln = document.getElementById('checkByBulan')
+    var cThn = document.getElementById('checkByTahun')
+    
+    var sTgl = document.getElementById('selectedTanggal')
+    var sBln = document.getElementById('selectedBulan')
+    var sThn = document.getElementById('selectedTahun')
+    
+    if(cTgl.checked == true)
+    {
+      sTgl.style.display = 'block'
+    } else {
+      sTgl.style.display = 'none'
+    }
+    
+    if(cBln.checked == true)
+    {
+      sBln.style.display = 'block'
+    } else {
+      sBln.style.display = 'none'
+    }
+    
+    if(cThn.checked == true)
+    {
+      sThn.style.display = 'block'
+    } else {
+      sThn.style.display = 'none'
+    }
+  }
+</script>
 
 <?php echo view('_partials/footer'); ?>

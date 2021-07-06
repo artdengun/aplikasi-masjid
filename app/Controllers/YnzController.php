@@ -46,10 +46,19 @@ class YnzController extends BaseController
         $currentPage = $this->request->getVar('page_daftarynz') ? $this->request->getVar('page_daftarynz') : 1;
         // paginate
         $paginate = 10000000;
-        $data['daftarynz']   = $this->ynz_model->join('daftarpengurus', 'daftarpengurus.idpengurus = daftarynz.idpengurus')->paginate($paginate, 'daftarynz');
-        $data['pager']        = $this->ynz_model->pager;
-        $data['currentPage']  = $currentPage;
-        echo view('daftarynz/laporan', $data);
+        //$data['daftarynz']   = $this->ynz_model->join('daftarpengurus', 'daftarpengurus.idpengurus = daftarynz.idpengurus')->paginate($paginate, 'daftarynz');
+        //$data['pager']        = $this->ynz_model->pager;
+        //$data['currentPage']  = $currentPage;
+        //echo view('daftarynz/laporan', $data);
+        
+        $data = [
+          'daftarynz'      => $this->ynz_model->join('daftarpengurus', 'daftarpengurus.idpengurus = daftarynz.idpengurus')->paginate($paginate, 'daftarynz'),
+          'pager'          => $this->ynz_model->pager,
+          'currentPage'    => $currentPage,
+          'tahun'          => $this->ynz_model->getTahun()
+        ];
+        
+        return view('daftarynz/laporan', $data);
     }
 
     public function create()
@@ -161,5 +170,46 @@ class YnzController extends BaseController
             session()->setFlashdata('warning', 'Delete Data Berhasil');
             return redirect()->to(base_url('daftarynz'));
         }
+    }
+    
+    public function filter()
+    {
+      $tanggalAwal     = $this->request->getPost('tanggalAwal');
+      $tanggalAkhir    = $this->request->getPost('tanggalAkhir');
+      $bulanAwal       = $this->request->getPost('bulanAwal');
+      $bulanAkhir      = $this->request->getPost('bulanAkhir');
+      $tahun1          = $this->request->getPost('tahun1');
+      $tahun2          = $this->request->getPost('tahun2');
+      $filter          = $this->request->getPost('filter');
+      
+      $currentPage = $this->request->getVar('page_daftarynz') ? $this->request->getVar('page_daftarynz') : 1;
+      
+      if ($filter == 1) {
+        
+        $data = [
+          'currentPage'     => $currentPage,
+          'datafilter'      => $this->ynz_model->filterByTanggal($tanggalAwal, $tanggalAkhir)
+        ];
+        
+        return view('daftarynz/laporanByFilter', $data);
+      } elseif ($filter == 2) {
+        
+        $data = [
+          'currentPage'     => $currentPage,
+          'datafilter'      => $this->ynz_model->filterByaBulan($tahun1, $bulanAwal, $bulanAkhir)
+        ];
+        
+        return view('daftarynz/laporanByFilter', $data);
+      } elseif ($filter == 3) {
+        
+        $data = [
+          'currentPage'     => $currentPage,
+          'datafilter'      => $this->ynz_model->filterByaTahun($tahun2)
+        ];
+        
+        return view('daftarynz/laporanByFilter', $data);
+      }
+      
+      
     }
 }

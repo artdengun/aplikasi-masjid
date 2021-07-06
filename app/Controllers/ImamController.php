@@ -47,10 +47,19 @@ class ImamController extends BaseController
         $currentPage = $this->request->getVar('page_daftarimam') ? $this->request->getVar('page_daftarimam') : 1;
         // paginate
         $paginate = 10000000;
-        $data['daftarimam']   = $this->imam_model->join('daftarpengurus', 'daftarpengurus.idpengurus = daftarimam.idpengurus')->paginate($paginate, 'daftarimam');
-        $data['pager']        = $this->imam_model->pager;
-        $data['currentPage']  = $currentPage;
-        echo view('daftarimam/laporan', $data);
+        //$data['daftarimam']   = $this->imam_model->join('daftarpengurus', 'daftarpengurus.idpengurus = daftarimam.idpengurus')->paginate($paginate, 'daftarimam');
+        //$data['pager']        = $this->imam_model->pager;
+        //$data['currentPage']  = $currentPage;
+        //echo view('daftarimam/laporan', $data);
+        
+        $data = [
+          'daftarimam'      => $this->imam_model->join('daftarpengurus', 'daftarpengurus.idpengurus = daftarimam.idpengurus')->paginate($paginate, 'daftarimam'),
+          'pager'          => $this->imam_model->pager,
+          'currentPage'    => $currentPage,
+          'tahun'          => $this->imam_model->getTahun()
+        ];
+        
+        return view('daftarimam/laporan', $data);
     }
 
 
@@ -160,5 +169,46 @@ class ImamController extends BaseController
             session()->setFlashdata('warning', 'Delete Data Berhasil');
             return redirect()->to(base_url('daftarimam'));
         }
+    }
+    
+    public function filter()
+    {
+      $tanggalAwal     = $this->request->getPost('tanggalAwal');
+      $tanggalAkhir    = $this->request->getPost('tanggalAkhir');
+      $bulanAwal       = $this->request->getPost('bulanAwal');
+      $bulanAkhir      = $this->request->getPost('bulanAkhir');
+      $tahun1          = $this->request->getPost('tahun1');
+      $tahun2          = $this->request->getPost('tahun2');
+      $filter          = $this->request->getPost('filter');
+      
+      $currentPage = $this->request->getVar('page_daftarimam') ? $this->request->getVar('page_daftarimam') : 1;
+      
+      if ($filter == 1) {
+        
+        $data = [
+          'currentPage'     => $currentPage,
+          'datafilter'      => $this->imam_model->filterByTanggal($tanggalAwal, $tanggalAkhir)
+        ];
+        
+        return view('daftarimam/laporanByFilter', $data);
+      } elseif ($filter == 2) {
+        
+        $data = [
+          'currentPage'     => $currentPage,
+          'datafilter'      => $this->imam_model->filterByaBulan($tahun1, $bulanAwal, $bulanAkhir)
+        ];
+        
+        return view('daftarimam/laporanByFilter', $data);
+      } elseif ($filter == 3) {
+        
+        $data = [
+          'currentPage'     => $currentPage,
+          'datafilter'      => $this->imam_model->filterByaTahun($tahun2)
+        ];
+        
+        return view('daftarimam/laporanByFilter', $data);
+      }
+      
+      
     }
 }

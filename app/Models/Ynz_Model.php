@@ -24,18 +24,47 @@ class Ynz_Model extends Model
 			->getRowArray();
         }   
     }
+    
     public function insertData($data)
-{
-    return $this->db->table($this->table)->insert($data);
-}
-
-public function updateData($data, $id)
-{
-    return $this->db->table($this->table)->update($data, ['idynz' => $id]);
-}
-public function deleteData($id)
-{
-    return $this->db->table($this->table)->delete(['idynz' => $id]);
-} 
+    {
+        return $this->db->table($this->table)->insert($data);
+    }
+    
+    public function updateData($data, $id)
+    {
+        return $this->db->table($this->table)->update($data, ['idynz' => $id]);
+    }
+    public function deleteData($id)
+    {
+        return $this->db->table($this->table)->delete(['idynz' => $id]);
+    } 
+    
+    public function getTahun() 
+    {
+       $query = $this->db->query("SELECT YEAR(tahun) as tahun FROM daftarynz GROUP BY YEAR(tahun) ORDER BY YEAR(tahun) ASC");
+       
+       return $query->getResult();
+     }
+     
+     public function filterByTanggal($tanggalAwal, $tanggalAkhir)
+     {
+        $query = $this->db->query("SELECT * FROM daftarynz JOIN daftarpengurus ON daftarpengurus.idpengurus = daftarynz.idpengurus WHERE tahun BETWEEN '$tanggalAwal' AND '$tanggalAkhir' ORDER BY tahun ASC");
+       
+       return $query->getResult();
+     }
+     
+     public function filterByaBulan($tahun1, $bulanAwal, $bulanAkhir)
+     {
+        $query = $this->db->query("SELECT * FROM daftarynz JOIN daftarpengurus ON daftarpengurus.idpengurus = daftarynz.idpengurus WHERE YEAR(tahun) = '$tahun1' AND MONTH(tahun) BETWEEN '$bulanAwal' AND '$bulanAkhir' ORDER BY tahun ASC");
+       
+       return $query->getResult();
+     }
+     
+     public function filterByaTahun($tahun2)
+     {
+        $query = $this->db->query("SELECT * FROM daftarynz JOIN daftarpengurus ON daftarpengurus.idpengurus = daftarynz.idpengurus WHERE YEAR(tahun) = '$tahun2' ORDER BY tahun ASC");
+       
+       return $query->getResult();
+     }
 
 }
