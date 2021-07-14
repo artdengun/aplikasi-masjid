@@ -35,6 +35,10 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Frontend::frontend');
 $routes->get('/kontak', 'Frontend::kontak');
 $routes->get('/about', 'Frontend::about');
+$routes->get('/blog', 'Frontend::blog');
+$routes->get('/blog-single', 'Frontend::blogSingle');
+$routes->get('/galery', 'Frontend::galleryColTwo');
+
 
 
 $routes->get('/dashboard', 'Home::index');

@@ -1,14 +1,3 @@
-<footer class="main-footer">
-  <div class="float-right d-none d-sm-inline">
-    Sistem Pengelolaan Manajemen Masjid
-  </div>
-  <strong>Copyright &copy; 2020 <script type="text/javascript">
-      new Date().getFullYear() > 2020 && document.write(" - " + new Date().getFullYear());
-    </script> <a href="<?php echo base_url('/'); ?>">PAYANGANDEV</a>.</strong> All rights reserved.
-</footer>
-
-
-<!-- jQuery -->
 <script src="<?php echo base_url('plugins/jquery/jquery.min.js'); ?>"></script>
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -41,7 +30,7 @@
       "searching": false,
       "lengthChange": false,
       "autoWidth": false,
-      "buttons": ["copy", "csv", "excel", "pdf", "print"]
+      "buttons": ["excel", "pdf"]
     }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
     $('#example2').DataTable({
       "paging": true,

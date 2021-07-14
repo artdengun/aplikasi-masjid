@@ -13,7 +13,7 @@
       Alamat : <p><b>Jl. Wibawa Mukti II Jl. Diman, RT.004/RW.006, Jatisari, Kec. Jatiasih, Kota Bks, Jawa Barat 17426</b></p>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="<?php echo base_url('/') ?>">Dashboard</a></li>
+          <li class="breadcrumb-item"><a href="<?php echo base_url('/dashboard') ?>">Dashboard</a></li>
           <li class="breadcrumb-item"><a href="<?php echo base_url('/users') ?>">Data users</a></li>
           <li class="breadcrumb-item" aria-current="page">Edit users</li>
           

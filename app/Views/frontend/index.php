@@ -5,6 +5,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 msj_slider_padding">
                 <div id="carouselExampleIndicators" class="slide carousel" data-ride="carousel">
                     <div class="carousel-inner" role="listbox">
+                        
                         <div class="carousel-item active">
                             <img src="<?php echo base_url('frontend/images/slider/1.jpg '); ?>" alt="" />
                             <div class="carousel-caption one">
@@ -16,6 +17,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="carousel-item">
                             <img src="<?php echo base_url('frontend/images/slider/2.jpg'); ?>" alt="" />
                             <div class="carousel-caption one">
@@ -27,6 +29,7 @@
                                 </div>
                             </div>
                         </div>
+                    
                     </div>
                     <a class="carousel-control-prev carousel-control" href="#carouselExampleIndicators" role="button" data-slide="prev"><i class="flaticon-back"></i></a>
                     <a class="carousel-control-next carousel-control" href="#carouselExampleIndicators" role="button" data-slide="next"><i class="flaticon-next"></i></a>
@@ -1062,121 +1065,91 @@
         </div>
     </div>
 </section>
-<!--Prayer area end here-->
-<!--Subscribe area start here-->
-<section class="subscribe-area section">
+<section class="prayer-area pd-t100">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="subs-form">
-                    <form>
-                        <h2><span><img src="images/icon/msg.png" alt="" /></span><span class="con pd-t5">Sign up for
-                                Newsletter</span></h2>
-                        <fieldset>
-                            <input type="email" placeholder="Email Address...">
-                            <span><i class="fa fa-envelope"></i></span>
-                        </fieldset>
+                <div class="section-heading-two">
+                    <h2>Rukun Iman</h2>
+                    <p>بُنِيَ الْإِسْلَامُ عَلَى خَمْسٍ : شَهَادَةِ أَنْ لَا إِلهَ إِلَّا اللهُ وَ أَنَّ مُحَمَّدًا رَسُوْلُ اللهِ ، وَ إِقَامِ الصَّلَاةِ ، وَ إِيْتَاءِ الزَّكَاةِ ، وَ حَجِّ الْبَيْتِ ، وَ صَوْمِ رَمَضَانَ . رواه البخاري و مسلم . </p> <br>
 
-                        <button type="submit" class="btn3"><span>Submit</span></button>
-                    </form>
+
+                    <p>"Islam dibangun di atas lima perkara: persaksian bahwa tiada tuhan yang berhak disembah kecuali Allah dan Muhammad adalah utusan Allah, mendirikan shalat, menunaikan zakat, pergi haji, dan puasa di bulan Ramadhan'". (HR. Al-Bukhari dan Muslim)</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="prayer-img">
+                    <img src="images/banner/bg-2.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden-md-down">
+                <div class="info">
+                    <div class="sun">
+                        <span class="mid"><img src="images/icon/1.png" alt="" /></span>
+                        <span class="ico1"><strong>Lillahi</strong></span>
+                        <span class="ico2"><strong>Shalat</strong></span>
+                        <span class="ico3"><strong>Fasting</strong></span>
+                        <span class="ico4"><strong>Zakaat</strong></span>
+                        <span class="ico5"><strong>Haji</strong></span>
+
+
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!--Subscribe area end here-->
-<!--Footer area start here-->
+<!--Prayer area end here-->
+
 <footer>
     <div class="footer-top">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                     <div class="footer-widget">
-                        <h4>Contact Us</h4>
+                        <h4>Kontak Kami</h4>
                         <div class="about-foo">
-                            <p>Please write your email and get our amazing updates, news and support. Proin gravida.
                             </p>
                             <ul>
-                                <li><span class="ico"><i class="fa fa-phone"></i></span><strong>+1 800 123
-                                        4567</strong></li>
-                                <li><span class="ico"><i class="fa fa-envelope"></i></span><span class="con">Mosque@example.com</span></li>
-                                <li><span class="ico"><i class="fa fa-map-marker"></i></span><span class="con">Sector # 48, 123 Street, Colony, INDIA</span></li>
+                                <li><p> Kontak 1 :  Saudara Arifin Akmal<span class="ico"><i class="fa fa-phone"></i></span><strong>
+                                    082261994978
+                                </strong></p></li>
+                                 <li><p> Kontak 2 :  Saudara Arifin Akmal<span class="ico"><i class="fa fa-phone"></i></span><strong>
+                                   085716967806
+                                </strong></p></li>
+                                <li><span class="ico"><i class="fa fa-map-marker"></i></span><span class="con">Jatisari, Jatiasih, Kota Bekasi, Jawa Barat, INDONESIA</span></li>
+
                             </ul>
+
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="footer-widget">
-                        <h4>Latest News</h4>
-                        <div class="post-foo">
-                            <div class="post-list">
-                                <div class="thimb">
-                                    <a href="#"><img src="images/blog/sm-1.jpg" alt="" /></a>
+                        <div class="text-justify">
+                            <div class="text-center">
+                                 <img src="<?php echo base_url('frontend/images/slider/sm-1.png'); ?>"> <br><br><br>
                                 </div>
-                                <div class="con">
-                                    <span><i class="fa fa-calendar-o"></i>20 Aug 2017</span>
-                                    <a href="#">
-                                        <h6>Marriage and Islam</h6>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="post-list">
-                                <div class="thimb">
-                                    <a href="#"><img src="images/blog/sm-2.jpg" alt="" /></a>
-                                </div>
-                                <div class="con">
-                                    <span><i class="fa fa-calendar-o"></i>20 Aug 2017</span>
-                                    <a href="#">
-                                        <h6>Marriage and Islam</h6>
-                                    </a>
-                                </div>
-                            </div>
+                                <p style="color: white;">إِنَّمَا يَعْمُرُ مَسَاجِدَ اللَّهِ مَنْ آمَنَ بِاللَّهِ وَالْيَوْمِ الْآخِرِ وَأَقَامَ الصَّلَاةَ وَآتَى الزَّكَاةَ وَلَمْ يَخْشَ إِلَّا اللَّهَ ۖ فَعَسَىٰ أُولَٰئِكَ أَنْ يَكُونُوا مِنَ الْمُهْتَدِينَ</p>
+
+                            <p style="color: white;">Allah SWT berfirman : "Sesungguhnya yang memakmurkan masjid Allah hanyalah orang-orang yang beriman kepada Allah dan hari kemudian, serta (tetap) melaksanakan salat, menunaikan zakat dan tidak takut (kepada apa pun) kecuali kepada Allah. Maka mudah-mudahan mereka termasuk orang-orang yang mendapat petunjuk" Q.S At-Taubah : 18</p>
+
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                     <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                     <div class="footer-widget">
-                        <h4>Useful Links</h4>
-                        <div class="link-foo">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-hand-o-right"></i> Who we are?</a></li>
-                                <li><a href="#"><i class="fa fa-hand-o-right"></i> Support and FAQ’s</a></li>
-                                <li><a href="#"><i class="fa fa-hand-o-right"></i> Payments </a></li>
-                                <li><a href="#"><i class="fa fa-hand-o-right"></i> Donations Trems</a></li>
-                                <li><a href="#"><i class="fa fa-hand-o-right"></i> Volunteer</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                    <div class="footer-widget">
-                        <h4>Twiter Feed</h4>
-                        <div class="twit-foo">
-                            <div class="twit-list">
-                                <div class="heading">
-                                    <i class="fa fa-twitter"></i>
-                                    <a href="#">@handgeakshay</a>
-                                    <em>- 4 Hours ago</em>
-                                </div>
-                                <div class="post">
+                        <div class="text-center" >
+                            <h3 style="color: white;">MASJID AL-HIKMAH</h3>
+                            <p style="color: white;">KAMPUNG PAYANGAN </p> <br>
+                           <img src="<?php echo base_url('frontend/images/logo/brand.png'); ?>" /> <br>  <br> <br>
 
-                                    <p><a href="#">www.example.com</a> Click Here, One More PSD Approval on <a href="#">#PSD #design #web</a></p>
-
-                                </div>
-                            </div>
-                            <div class="twit-list">
-                                <div class="heading">
-                                    <i class="fa fa-twitter"></i>
-                                    <a href="#">@handgeakshay</a>
-                                    <em>- 4 Hours ago</em>
-                                </div>
-                                <div class="post">
-
-                                    <p><a href="#">www.example.com</a> Click Here, One More PSD Approval on <a href="#">#PSD #design #web</a></p>
-
-                                </div>
-                            </div>
-                        </div>
+                                <p style="color: white;">Jl. Wibawa Mukti II Jl. Diman, RT.004/RW.006, Jatisari, Kec. Jatiasih, Kota Bekasi, Jawa Barat 17426</p>
+                        </div>  
                     </div>
                 </div>
             </div>

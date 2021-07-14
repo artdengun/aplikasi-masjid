@@ -12,8 +12,8 @@
             <p class="mb-4">Update Data Secara Rutin Agar Konsistensi Data Akan Terjaga Dengan Baik</p>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="<?php echo base_url('/') ?>"> <i class="nav-icon fas  fa-mosque"></i> Dashboard</a></li>
-                    <li class="breadcrumb-item" aria-current="page"><i class="nav-icon fas  fa-users"></i> Data Khotib</li>
+                    <li class="breadcrumb-item"><a href="<?php echo base_url('/dashboard') ?>"> <i class="nav-icon fas  fa-mosque"></i> Dashboard</a></li>
+                    <li class="breadcrumb-item" aria-current="page"><i class="nav-icon fas  fa-users"></i> Laporan Data Khotib</li>
                 </ol>
             </nav>
         </div>
@@ -48,7 +48,6 @@
                                     <?php foreach ($datafilter as $row) { ?>
                                         <tr>
                                             <td class="text-center"><?= $i++; ?></td>
-                                            <!-- <td><img src="?= base_url('uploads/bilal/' . $row['foto']) ?>" class="rounded-circle" width="50" height="50"></td> -->
                                             <td><?php echo $row->nama; ?></td>
                                             <td><?php echo $row->alamat; ?></td>
                                             <td><?php echo $row->status; ?></td>

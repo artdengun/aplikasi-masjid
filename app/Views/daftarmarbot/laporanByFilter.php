@@ -7,13 +7,13 @@
             <p style="color:green;"> <b>MASJID AL-HIKMAH KAMPUNG PAYANGAN <b /><br></p>
             <h4><b><i>MANAGEMENT INFORMATION SYSTEM</i></b></h4>
             <img src="<?php echo base_url('dist/img/logo.ico'); ?>" alt="gambar al-hikmah" height="187"> <br><br>
-            <h3 class="h3 mb-2 text-gray-800"> Data Pengurus <br>
+            <h3 class="h3 mb-2 text-gray-800"> Data Marbot <br>
             </h3>
             <p class="mb-4">Update Data Secara Rutin Agar Konsistensi Data Akan Terjaga Dengan Baik</p>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="<?php echo base_url('/') ?>"> <i class="nav-icon fas  fa-mosque"></i> Dashboard</a></li>
-                    <li class="breadcrumb-item" aria-current="page"><i class="nav-icon fas  fa-users"></i> Data Pengurus</li>
+                    <li class="breadcrumb-item"><a href="<?php echo base_url('/dashboard') ?>"> <i class="nav-icon fas  fa-mosque"></i> Dashboard</a></li>
+                    <li class="breadcrumb-item" aria-current="page"><i class="nav-icon fas  fa-users"></i> Laporan Data Marbot</li>
                 </ol>
             </nav>
         </div>
@@ -46,8 +46,7 @@
                                     <?php $i = 1 + (5 * ($currentPage - 1)); ?>
                                     <?php foreach ($datafilter as $row) { ?>
                                         <tr>
-                                            <td class="text-center"><?= $i++; ?></td>
-                                            <!-- <td><img src="?= base_url('uploads/bilal/' . $row['foto']) ?>" class="rounded-circle" width="50" height="50"></td> -->
+                                            <td class="text-center"><?= $i++; ?></td> 
                                             <td><?php echo $row->nama; ?></td>
                                             <td><?php echo $row->alamat; ?></td>
                                             <td><?php echo $row->status; ?></td>
