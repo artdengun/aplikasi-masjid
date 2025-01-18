@@ -12,24 +12,32 @@ class Frontend extends BaseController
 	}
 	public function kontak()
 	{
-		return view("frontend/contact");
+		return view("frontend/kontak");
 	}
-	public function about()
+	public function sejarah()
 	{
-		return view("frontend/about");
-	}
-
-	public function blog()
-	{
-		return view("frontend/blog");
+		return view("frontend/sejarah");
 	}
 
-	public function blogSingle()
+	public function layanan()
 	{
-		return view("frontend/blog-single");
+		return view("frontend/layanan");
 	}
-	public function galleryColTwo()
+
+	public function informasiAcara()
 	{
-		return view("frontend/gallery-col-2");
+		return view("frontend/informasi-acara");
+	}
+	public function laporanArusKas()
+	{
+		return view("frontend/laporan-arus-kas");
+	}
+	public function laporanTahunan()
+	{
+		return view("frontend/laporan-tahunan");
+	}
+	public function laporanKotakJumat()
+	{
+		return view("frontend/laporan-kotak-jumat");
 	}
 }

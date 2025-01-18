@@ -1,142 +1,73 @@
-<!doctype html>
-<html class="no-js" lang="en">
 
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Masjid Al-Hikmah Payangan</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="img/favicon.png">
-    <link rel="shortcut icon" href="<?php echo base_url('frontend/images/icon/logo.ico'); ?>" type="image/x-icon" />
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Masjid Alhikmah Payangan </title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
-    <!-- Place favicon.ico in the root directory -->
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <!-- all css here -->
-    <!-- bootstrap v3.3.6 css -->
-    <link rel="stylesheet" href="<?php echo base_url('frontend/css/bootstrap.min.css'); ?>">
-    <!-- animate css -->
-    <link rel="stylesheet" href="<?php echo base_url('frontend/css/animate.css'); ?>">
-    <!-- jquery-ui.min css -->
-    <link rel="stylesheet" href="<?php echo base_url('frontend/css/jquery-ui.min.css'); ?>">
-    <!-- meanmenu css -->
-    <link rel="stylesheet" href="<?php echo base_url('frontend/css/meanmenu.min.css'); ?>">
-    <!-- owl.carousel css -->
-    <link rel="stylesheet" href="<?php echo base_url('frontend/css/owl.carousel.min.css'); ?>">
-    <!-- bxslider css -->
-    <link rel="stylesheet" href="<?php echo base_url('frontend/css/jquery.bxslider.css'); ?>">
-    <!-- magnific popup css -->
-    <link rel="stylesheet" href="<?php echo base_url('frontend/css/magnific-popup.css'); ?>">
-    <!-- font-awesome css -->
-    <link rel="stylesheet" href="<?php echo base_url('frontend/css/font-awesome.min.css'); ?>">
-    <!-- flaticon css -->
-    <link rel="stylesheet" href="<?php echo base_url('frontend/css/flaticon.css'); ?>">
-    <!-- style css -->
-    <link rel="stylesheet" href="<?php echo base_url('frontend/style.css'); ?>">
-    <!-- responsive css -->
-    <link rel="stylesheet" href="<?php echo base_url('frontend/responsive.css'); ?>">
-    <!-- modernizr css -->
-    <script src="<?php echo base_url('frontend/js/vendor/modernizr-2.8.3.min.js'); ?>"></script>
-    <script src="<?php echo base_url('frontend/../../google_analytics_auto.js'); ?>"></script>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Marcellus:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
-<body>
-    <header>
+<body class="index-page">
 
-        <div class="main-header hidden-sm-down" id="sticky">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                        <div class="logo-area">
-                            <a href="#"><img class="rounded-circle mx-auto" src="<?php echo base_url('frontend/images/logo/brand.png'); ?>" /></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-                        <div class="menu-area">
-                            <nav>
-                                <ul class="list-inline">
-                                    <li><a href="<?php echo base_url('/'); ?>"> <i> Home</a></li>
-                                    
-                                    <li><a href="#">Event</a></li>
-                                    
-                                    <li class="drop-menu">
-                                        <a href="javascript:void(0)"> Laporan Keuangan</a>
-                                        <ul class="down-menu">
-                                            <li><a href="blog.html">Laporan</a></li>
-                                            <li><a href="blog.html">Laporan</a></li>
-                                            <li><a href="blog.html">Laporan</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="drop-menu">
-                                        <a href="javascript:void(0)">Social Media</a>
-                                        <ul class="down-menu">
-                                            <li><a href="blog.html"><i class="fa fa-youtube-play">Youtube </i></a></li>
-                                            <li><a href="#"><i class="fa fa-facebook-square"> Facebook</a></i></li>
-                                            <li><a href="#"> <i class="fa fa-instagram"> Instagram</a></i></li>
+  <header id="header" class="header d-flex align-items-center position-relative">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-                                        </ul>
-                                    </li>
-                                    <li><a href="<?php echo base_url('/kontak'); ?>">Kontak Kami</a></li>
-                                    <li class="menu-btn">
-                                        <ul>
-                                            <li><a href="<?php echo base_url('/v1/auth'); ?>" class="btn1"><span>LOGIN</span></a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="search-box">
-                            <form>
-                                <input type="search" placeholder="">
-                                <button><i class="flaticon-magnifying-glass"></i></button>
-                                <span class="close-search"><i class="flaticon-cancel"></i></span>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="mobile-menu-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="mobile-menu">
-                            <nav id="dropdown">
-                                <ul class="list-inline">
-                                    <li><a href="l">Home</a></li>
-                                    <li class="drop-menu">
-                                        <a href="javascript:void(0)">Causes</a>
-                                        <ul class="down-menu">
-                                            <li><a href="causes-grid.html">causes grid</a></li>
-                                            <li><a href="causes-list.html">causes list</a></li>
-                                            <li><a href="causes-single.html">causes single</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Event</a></li>
-                                    <li class="drop-menu">
-                                        <a href="javascript:void(0)">Pages</a>
-                                        <ul class="down-menu">
-                                            <li><a href="about.html">about</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Sermons</a></li>
-                                    <li class="drop-menu">
-                                        <a href="javascript:void(0)">Blog</a>
-                                        <ul class="down-menu">
-                                            <li><a href="blog.html">blog</a></li>
-                                            <li><a href="blog-single.html">blog single</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="<?php echo base_url('/kontak'); ?>">Kontak Kami</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="frontend/images/logo/brand.png  " alt="MasjidAlHikmahPayangan">
+        <h1 class="sitename">Masjid AlHikmah</h1> 
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="<?php echo base_url('/') ?>" class="active">Halaman Utama</a></li>
+          <li><a href="<?php echo base_url('/sejarah') ?>">Sejarah</a></li>
+          <li><a href="<?php echo base_url('/layanan') ?>">Layanan</a></li>
+          <li><a href="<?php echo base_url('/informasi-acara') ?>">Informasi Acara</a></li>
+          <!-- <li><a href="blog.html">Informasi</a></li> -->
+          <li class="dropdown"><a href="#"><span>Laporan Keuangan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="<?php echo base_url('/laporan-arus-kas') ?>">Laporan Arus Kas </a></li>
+                <!-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Dropdown 1</a></li>
+                    <li><a href="#">Deep Dropdown 2</a></li>
+                    <li><a href="#">Deep Dropdown 3</a></li>
+                    <li><a href="#">Deep Dropdown 4</a></li>
+                    <li><a href="#">Deep Dropdown 5</a></li>
+                  </ul>
+                </li> -->
+              <li><a href="#"></a></li>
+              <li><a href="<?php echo base_url('/laporan-tahunan')?>">Laporan Tahunan</a></li>
+              <li><a href="<?php echo base_url('/laporan-kotak-jumat')?>">Laporan Kotak Jumat </a></li>
+            </ul>
+          </li>
+          <li><a href="<?php echo base_url('/kontak')?>">Kontak Masjid</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>

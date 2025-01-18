@@ -34,10 +34,13 @@ $routes->setAutoRoute(true);
 
 $routes->get('/', 'Frontend::frontend');
 $routes->get('/kontak', 'Frontend::kontak');
-$routes->get('/about', 'Frontend::about');
-$routes->get('/blog', 'Frontend::blog');
-$routes->get('/blog-single', 'Frontend::blogSingle');
-$routes->get('/galery', 'Frontend::galleryColTwo');
+$routes->get('/sejarah', 'Frontend::sejarah');
+$routes->get('/layanan', 'Frontend::layanan');
+$routes->get('/informasi-acara', 'Frontend::informasiAcara');
+$routes->get('/laporan-arus-kas', 'Frontend::laporanArusKas');
+$routes->get('/laporan-tahunan', 'Frontend::laporanTahunan');
+$routes->get('/laporan-kotak-jumat', 'Frontend::laporanKotakJumat');
+
 
 
 

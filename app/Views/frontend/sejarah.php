@@ -2,64 +2,136 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+    <!-- Page Title -->
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);">
+      <div class="container position-relative">
+        <h1>About</h1>
+        <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">About</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
 
-      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+    <!-- About 3 Section -->
+    <section id="about-3" class="about-3 section">
 
-        <div class="carousel-item active">
-          <img src="assets/img/hero_1.jpg" alt="">
-          <div class="carousel-container">
-            <h2>Farming is the best solution of worlds starvation</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <div class="container">
+        <div class="row gy-4 justify-content-between align-items-center">
+          <div class="col-lg-6 order-lg-2 position-relative" data-aos="zoom-out">
+            <img src="assets/img/img_sq_1.jpg" alt="Image" class="img-fluid">
+            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn">
+              <span class="play"><i class="bi bi-play-fill"></i></span>
+            </a>
           </div>
-        </div><!-- End Carousel Item -->
+          <div class="col-lg-5 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="content-title mb-4">Plants Make Life Better</h2>
+            <p class="mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+              necessitatibus placeat, atque qui voluptatem velit explicabo vitae
+              repellendus architecto provident nisi ullam minus asperiores commodi!
+              Tenetur, repellat aliquam nihil illo.
+            </p>
+            <ul class="list-unstyled list-check">
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Velit explicabo vitae repellendu</li>
+              <li>Repellat aliquam nihil illo</li>
+            </ul>
 
-        <div class="carousel-item">
-          <img src="assets/img/hero_2.jpg" alt="">
-          <div class="carousel-container">
-            <h2>Organic vegetables is good for health</h2>
-            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+            <p><a href="#" class="btn-cta">Get in touch</a></p>
           </div>
-        </div><!-- End Carousel Item -->
+        </div>
+      </div>
+    </section><!-- /About 3 Section -->
 
-        <div class="carousel-item">
-          <img src="assets/img/hero_3.jpg" alt="">
-          <div class="carousel-container">
-            <h2>Providing Fresh Produce Every Single Day</h2>
-            <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+    <!-- Team Section -->
+    <section class="team-15 team section" id="team">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+        <p>Necessitatibus eius consequatur</p>
+      </div><!-- End Section Title -->
+
+      <div class="content">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="person">
+                <figure>
+                  <img src="assets/img/team/team-1.jpg" alt="Image" class="img-fluid">
+                  <div class="social">
+                    <a href="#"><span class="bi bi-facebook"></span></a>
+                    <a href="#"><span class="bi bi-twitter-x"></span></a>
+                    <a href="#"><span class="bi bi-linkedin"></span></a>
+                  </div>
+                </figure>
+                <div class="person-contents">
+                  <h3>Joshua Stefan</h3>
+                  <span class="position">Farmer</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="person">
+                <figure>
+                  <img src="assets/img/team/team-2.jpg" alt="Image" class="img-fluid">
+                  <div class="social">
+                    <a href="#"><span class="bi bi-facebook"></span></a>
+                    <a href="#"><span class="bi bi-twitter-x"></span></a>
+                    <a href="#"><span class="bi bi-linkedin"></span></a>
+                  </div>
+                </figure>
+                <div class="person-contents">
+                  <h3>Sheena Anderson</h3>
+                  <span class="position">Marketing</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="person">
+                <figure>
+                  <img src="assets/img/team/team-3.jpg" alt="Image" class="img-fluid">
+                  <div class="social">
+                    <a href="#"><span class="bi bi-facebook"></span></a>
+                    <a href="#"><span class="bi bi-twitter-x"></span></a>
+                    <a href="#"><span class="bi bi-linkedin"></span></a>
+                  </div>
+                </figure>
+                <div class="person-contents">
+                  <h3>Evan Smith</h3>
+                  <span class="position">Content</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="person">
+                <figure>
+                  <img src="assets/img/team/team-4.jpg" alt="Image" class="img-fluid">
+                  <div class="social">
+                    <a href="#"><span class="bi bi-facebook"></span></a>
+                    <a href="#"><span class="bi bi-twitter-x"></span></a>
+                    <a href="#"><span class="bi bi-linkedin"></span></a>
+                  </div>
+                </figure>
+                <div class="person-contents">
+                  <h3>Kaylie Jones</h3>
+                  <span class="position">Accountant</span>
+                </div>
+              </div>
+            </div>
+
           </div>
-        </div><!-- End Carousel Item -->
-
-        <div class="carousel-item">
-          <img src="assets/img/hero_4.jpg" alt="">
-          <div class="carousel-container">
-            <h2>Farming as a Passione</h2>
-            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius.</p>
-          </div>
-        </div><!-- End Carousel Item -->
-
-        <div class="carousel-item">
-          <img src="assets/img/hero_5.jpg" alt="">
-          <div class="carousel-container">
-            <h2>Good Food For All</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-        </div><!-- End Carousel Item -->
-
-        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-        </a>
-
-        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-        </a>
-
-        <ol class="carousel-indicators"></ol>
-
+        </div>
       </div>
 
-    </section><!-- /Hero Section -->
+    </section><!-- /Team Section -->
 
     <!-- Services Section -->
     <section id="services" class="services section">
@@ -239,398 +311,6 @@
       </div>
     </section><!-- /Services Section -->
 
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <div class="content">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 mb-4 mb-lg-0">
-              <img src="assets/img/img_long_5.jpg" alt="Image " class="img-fluid img-overlap" data-aos="zoom-out">
-            </div>
-            <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
-              <h3 class="content-subtitle text-white opacity-50">Why Choose Us</h3>
-              <h2 class="content-title mb-4">
-                More than <strong>50 year experience</strong> in agriculture
-                industry
-              </h2>
-              <p class="opacity-50">
-                Reprehenderit, odio laboriosam? Blanditiis quae ullam quasi illum
-                minima nostrum perspiciatis error consequatur sit nulla.
-              </p>
-
-              <div class="row my-5">
-                <div class="col-lg-12 d-flex align-items-start mb-4">
-                  <i class="bi bi-cloud-rain me-4 display-6"></i>
-                  <div>
-                    <h4 class="m-0 h5 text-white">Plants needs rain</h4>
-                    <p class="text-white opacity-50">Lorem ipsum dolor sit amet.</p>
-                  </div>
-                </div>
-                <div class="col-lg-12 d-flex align-items-start mb-4">
-                  <i class="bi bi-heart me-4 display-6"></i>
-                  <div>
-                    <h4 class="m-0 h5 text-white">Love organic foods</h4>
-                    <p class="text-white opacity-50">Lorem ipsum dolor sit amet.</p>
-                  </div>
-                </div>
-                <div class="col-lg-12 d-flex align-items-start">
-                  <i class="bi bi-shop me-4 display-6"></i>
-                  <div>
-                    <h4 class="m-0 h5 text-white">Sell vegies</h4>
-                    <p class="text-white opacity-50">Lorem ipsum dolor sit amet.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- /About Section -->
-
-    <!-- About 3 Section -->
-    <section id="about-3" class="about-3 section">
-
-      <div class="container">
-        <div class="row gy-4 justify-content-between align-items-center">
-          <div class="col-lg-6 order-lg-2 position-relative" data-aos="zoom-out">
-            <img src="assets/img/img_sq_1.jpg" alt="Image" class="img-fluid">
-            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn">
-              <span class="play"><i class="bi bi-play-fill"></i></span>
-            </a>
-          </div>
-          <div class="col-lg-5 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-            <h2 class="content-title mb-4">Plants Make Life Better</h2>
-            <p class="mb-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              necessitatibus placeat, atque qui voluptatem velit explicabo vitae
-              repellendus architecto provident nisi ullam minus asperiores commodi!
-              Tenetur, repellat aliquam nihil illo.
-            </p>
-            <ul class="list-unstyled list-check">
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Velit explicabo vitae repellendu</li>
-              <li>Repellat aliquam nihil illo</li>
-            </ul>
-
-            <p><a href="#" class="btn-cta">Get in touch</a></p>
-          </div>
-        </div>
-      </div>
-    </section><!-- /About 3 Section -->
-
-    <!-- Services 2 Section -->
-    <section id="services-2" class="services-2 section dark-background">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Necessitatibus eius consequatur</p>
-      </div><!-- End Section Title -->
-
-      <div class="services-carousel-wrap">
-        <div class="container">
-          <div class="swiper init-swiper">
-            <script type="application/json" class="swiper-config">
-              {
-                "loop": true,
-                "speed": 600,
-                "autoplay": {
-                  "delay": 5000
-                },
-                "slidesPerView": "auto",
-                "pagination": {
-                  "el": ".swiper-pagination",
-                  "type": "bullets",
-                  "clickable": true
-                },
-                "navigation": {
-                  "nextEl": ".js-custom-next",
-                  "prevEl": ".js-custom-prev"
-                },
-                "breakpoints": {
-                  "320": {
-                    "slidesPerView": 1,
-                    "spaceBetween": 40
-                  },
-                  "1200": {
-                    "slidesPerView": 3,
-                    "spaceBetween": 40
-                  }
-                }
-              }
-            </script>
-            <button class="navigation-prev js-custom-prev">
-              <i class="bi bi-arrow-left-short"></i>
-            </button>
-            <button class="navigation-next js-custom-next">
-              <i class="bi bi-arrow-right-short"></i>
-            </button>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="service-item">
-                  <div class="service-item-contents">
-                    <a href="#">
-                      <span class="service-item-category">We do</span>
-                      <h2 class="service-item-title">Planting</h2>
-                    </a>
-                  </div>
-                  <img src="assets/img/img_sq_1.jpg" alt="Image" class="img-fluid">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-item">
-                  <div class="service-item-contents">
-                    <a href="#">
-                      <span class="service-item-category">We do</span>
-                      <h2 class="service-item-title">Mulching</h2>
-                    </a>
-                  </div>
-                  <img src="assets/img/img_sq_3.jpg" alt="Image" class="img-fluid">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-item">
-                  <div class="service-item-contents">
-                    <a href="#">
-                      <span class="service-item-category">We do</span>
-                      <h2 class="service-item-title">Watering</h2>
-                    </a>
-                  </div>
-                  <img src="assets/img/img_sq_8.jpg" alt="Image" class="img-fluid">
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="service-item">
-                  <div class="service-item-contents">
-                    <a href="#">
-                      <span class="service-item-category">We do</span>
-                      <h2 class="service-item-title">Fertilizing</h2>
-                    </a>
-                  </div>
-                  <img src="assets/img/img_sq_4.jpg" alt="Image" class="img-fluid">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-item">
-                  <div class="service-item-contents">
-                    <a href="#">
-                      <span class="service-item-category">We do</span>
-                      <h2 class="service-item-title">Harvesting</h2>
-                    </a>
-                  </div>
-                  <img src="assets/img/img_sq_5.jpg" alt="Image" class="img-fluid">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-item">
-                  <div class="service-item-contents">
-                    <a href="#">
-                      <span class="service-item-category">We do</span>
-                      <h2 class="service-item-title">Mowing</h2>
-                    </a>
-                  </div>
-                  <img src="assets/img/img_sq_6.jpg" alt="Image" class="img-fluid">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-item">
-                  <div class="service-item-contents">
-                    <a href="#">
-                      <span class="service-item-category">We do</span>
-                      <h2 class="service-item-title">Seeding Plants</h2>
-                    </a>
-                  </div>
-                  <img src="assets/img/img_sq_8.jpg" alt="Image" class="img-fluid">
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </div>
-    </section><!-- /Services 2 Section -->
-
-    <!-- Testimonials Section -->
-    <section class="testimonials-12 testimonials section" id="testimonials">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>TESTIMONIALS</h2>
-        <p>Necessitatibus eius consequatur</p>
-      </div><!-- End Section Title -->
-
-      <div class="testimonial-wrap">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 mb-4 mb-md-4">
-              <div class="testimonial">
-                <img src="assets/img/testimonials/testimonials-1.jpg" alt="Testimonial author">
-                <blockquote>
-                  <p>
-                    “Lorem ipsum dolor sit, amet consectetur adipisicing
-                    elit. Provident deleniti iusto molestias, dolore vel fugiat
-                    ab placeat ea?”
-                  </p>
-                </blockquote>
-                <p class="client-name">James Smith</p>
-              </div>
-            </div>
-            <div class="col-md-6 mb-4 mb-md-4">
-              <div class="testimonial">
-                <img src="assets/img/testimonials/testimonials-2.jpg" alt="Testimonial author">
-                <blockquote>
-                  <p>
-                    “Lorem ipsum dolor sit, amet consectetur adipisicing
-                    elit. Provident deleniti iusto molestias, dolore vel fugiat
-                    ab placeat ea?”
-                  </p>
-                </blockquote>
-                <p class="client-name">Kate Smith</p>
-              </div>
-            </div>
-            <div class="col-md-6 mb-4 mb-md-4">
-              <div class="testimonial">
-                <img src="assets/img/testimonials/testimonials-3.jpg" alt="Testimonial author">
-                <blockquote>
-                  <p>
-                    “Lorem ipsum dolor sit, amet consectetur adipisicing
-                    elit. Provident deleniti iusto molestias, dolore vel fugiat
-                    ab placeat ea?”
-                  </p>
-                </blockquote>
-                <p class="client-name">Claire Anderson</p>
-              </div>
-            </div>
-            <div class="col-md-6 mb-4 mb-md-4">
-              <div class="testimonial">
-                <img src="assets/img/testimonials/testimonials-4.jpg" alt="Testimonial author">
-                <blockquote>
-                  <p>
-                    “Lorem ipsum dolor sit, amet consectetur adipisicing
-                    elit. Provident deleniti iusto molestias, dolore vel fugiat
-                    ab placeat ea?”
-                  </p>
-                </blockquote>
-                <p class="client-name">Dan Smith</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- /Testimonials Section -->
-
-    <!-- Recent Posts Section -->
-    <section id="recent-posts" class="recent-posts section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Recent Posts</h2>
-        <p>Necessitatibus eius consequatur</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-5">
-
-          <div class="col-xl-4 col-md-6">
-            <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="100">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt="">
-                <span class="post-date">December 12</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Julia Parker</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Politics</span>
-                  </div>
-                </div>
-
-                <hr>
-
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </div>
-          </div><!-- End post item -->
-
-          <div class="col-xl-4 col-md-6">
-            <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="200">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt="">
-                <span class="post-date">July 17</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Et repellendus molestiae qui est sed omnis</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Mario Douglas</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Sports</span>
-                  </div>
-                </div>
-
-                <hr>
-
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </div>
-          </div><!-- End post item -->
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="post-item position-relative h-100">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt="">
-                <span class="post-date">September 05</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Quia assumenda est et veritati tirana ploder</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Lisa Hunter</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Economics</span>
-                  </div>
-                </div>
-
-                <hr>
-
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </div>
-          </div><!-- End post item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Recent Posts Section -->
-
     <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action section light-background">
 
@@ -664,80 +344,99 @@
 
   </main>
 
-  <footer>
+  <footer id="footer" class="footer dark-background">
+
     <div class="footer-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                    <div class="footer-widget">
-                        <h4>Kontak Kami</h4>
-                        <div class="about-foo">
-                            </p>
-                            <ul>
-                                <li><p> Kontak 1 :  Saudara Arifin Akmal<span class="ico"><i class="fa fa-phone"></i></span><strong>
-                                    082261994978
-                                </strong></p></li>
-                                 <li><p> Kontak 2 :  Saudara Arifin Akmal<span class="ico"><i class="fa fa-phone"></i></span><strong>
-                                   085716967806
-                                </strong></p></li>
-                                <li><span class="ico"><i class="fa fa-map-marker"></i></span><span class="con">Jatisari, Jatiasih, Kota Bekasi, Jawa Barat, INDONESIA</span></li>
-
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="footer-widget">
-                        <div class="text-justify">
-                            <div class="text-center">
-                                 <img src="<?php echo base_url('frontend/images/slider/sm-1.png'); ?>"> <br><br><br>
-                                </div>
-                                <p style="color: white;">إِنَّمَا يَعْمُرُ مَسَاجِدَ اللَّهِ مَنْ آمَنَ بِاللَّهِ وَالْيَوْمِ الْآخِرِ وَأَقَامَ الصَّلَاةَ وَآتَى الزَّكَاةَ وَلَمْ يَخْشَ إِلَّا اللَّهَ ۖ فَعَسَىٰ أُولَٰئِكَ أَنْ يَكُونُوا مِنَ الْمُهْتَدِينَ</p>
-
-                            <p style="color: white;">Allah SWT berfirman : "Sesungguhnya yang memakmurkan masjid Allah hanyalah orang-orang yang beriman kepada Allah dan hari kemudian, serta (tetap) melaksanakan salat, menunaikan zakat dan tidak takut (kepada apa pun) kecuali kepada Allah. Maka mudah-mudahan mereka termasuk orang-orang yang mendapat petunjuk" Q.S At-Taubah : 18</p>
-
-                        </div>
-                    </div>
-                </div>
-                     <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                    <div class="footer-widget">
-                        <div class="text-center" >
-                            <h3 style="color: white;">MASJID AL-HIKMAH</h3>
-                            <p style="color: white;">KAMPUNG PAYANGAN </p> <br>
-                           <img src="<?php echo base_url('frontend/images/logo/brand.png'); ?>" /> <br>  <br> <br>
-
-                                <p style="color: white;">Jl. Wibawa Mukti II Jl. Diman, RT.004/RW.006, Jatisari, Kec. Jatiasih, Kota Bekasi, Jawa Barat 17426</p>
-                        </div>  
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">AgriCulture</span>
+            </a>
+            <div class="footer-contact pt-3">
+              <p>A108 Adam Street</p>
+              <p>New York, NY 535022</p>
+              <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+              <p><strong>Email:</strong> <span>info@example.com</span></p>
             </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Product Management</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Hic solutasetp</h4>
+            <ul>
+              <li><a href="#">Molestiae accusamus iure</a></li>
+              <li><a href="#">Excepturi dignissimos</a></li>
+              <li><a href="#">Suscipit distinctio</a></li>
+              <li><a href="#">Dilecta</a></li>
+              <li><a href="#">Sit quas consectetur</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Nobis illum</h4>
+            <ul>
+              <li><a href="#">Ipsam</a></li>
+              <li><a href="#">Laudantium dolorum</a></li>
+              <li><a href="#">Dinera</a></li>
+              <li><a href="#">Trodelas</a></li>
+              <li><a href="#">Flexo</a></li>
+            </ul>
+          </div>
+
         </div>
+      </div>
     </div>
-        <div class="footer-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="foo-bot">
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12 col-xs-12 pd-0">
-                                <div class="copyright text-center">
-                                    <p><?php
-                                        $tanggal = time();
-                                        $tahun = date("Y", $tanggal);
-                                        echo "Copyright @ 2020 - " . $tahun;
-                                        ?> <span> Masjid Al-hikmah Payangan </span>
-                                        Created By : <a href="#"> Payangan Developer Team</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+    <div class="copyright text-center">
+      <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <div>
+            © Copyright <strong><span>MyWebsite</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/herobiz-bootstrap-business-template/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
         </div>
+
+        <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+          <a href=""><i class="bi bi-twitter-x"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+
+      </div>
     </div>
-    </footer>
+
+  </footer>
+
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
