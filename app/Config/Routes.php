@@ -41,9 +41,6 @@ $routes->get('/laporan-arus-kas', 'Frontend::laporanArusKas');
 $routes->get('/laporan-tahunan', 'Frontend::laporanTahunan');
 $routes->get('/laporan-kotak-jumat', 'Frontend::laporanKotakJumat');
 
-
-
-
 $routes->get('/dashboard', 'Home::index');
 $routes->get('/v1/auth', 'LoginController::index');
 

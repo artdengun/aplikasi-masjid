@@ -28,6 +28,13 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    .rating {
+        color: #ffc107; /* Warna kuning untuk bintang */
+        font-size: 1.2em;
+        margin-top: 5px;
+        }
+  </style>
 </head>
 
 <body class="index-page">
