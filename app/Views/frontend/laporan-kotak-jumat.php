@@ -3,7 +3,7 @@
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);">
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/ui/background_header.jpg);">
       <div class="container position-relative">
         <h1>Blog</h1>
         <p>

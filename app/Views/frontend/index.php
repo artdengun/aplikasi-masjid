@@ -292,13 +292,13 @@
   </section><!-- /Services Section -->
 
   <!-- About Section -->
-  <section id="about" class="about section">
+  <!-- <section id="about" class="about section">
 
     <div class="content">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 mb-4 mb-lg-0">
-            <img src="assets/img/img_long_5.jpg" alt="Image " class="img-fluid img-overlap" data-aos="zoom-out">
+            <img src="assets/logo/brand.png" alt="Image " class="img-fluid img-overlap" data-aos="zoom-out">
           </div>
           <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
             <h3 class="content-subtitle text-white opacity-50">Why Choose Us</h3>
@@ -338,10 +338,12 @@
         </div>
       </div>
     </div>
-  </section><!-- /About Section -->
+  </section> -->
+  
+  <!-- /About Section -->
 
   <!-- About 3 Section -->
-  <section id="about-3" class="about-3 section">
+  <!-- <section id="about-3" class="about-3 section">
 
     <div class="container">
       <div class="row gy-4 justify-content-between align-items-center">
@@ -369,7 +371,8 @@
         </div>
       </div>
     </div>
-  </section><!-- /About 3 Section -->
+  </section> -->
+  <!-- /About 3 Section -->
 
   <!-- Services 2 Section -->
   <section id="services-2" class="services-2 section dark-background">
@@ -656,7 +659,7 @@
 
             <div class="post-img position-relative overflow-hidden">
               <img src="<?php echo base_url('assets/img/event/donasi_hewan_qurban.png');?>" class="img-fluid" alt="">
-              <span class="post-date">September 05 2024</span>
+              <span class="post-date">26 Mei 2021</span>
             </div>
 
             <div class="post-content d-flex flex-column"> 
