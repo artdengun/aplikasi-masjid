@@ -5,12 +5,11 @@
     <!-- Page Title -->
     <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/ui/background_header.jpg);">
       <div class="container position-relative">
-        <h1>Blog Details</h1>
-        <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
+      <h1>Laporan Tahunan</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Blog Details</li>
+            <li><a href="<?php echo base_url('/'); ?>">Halaman Utama</a></li>
+            <li class="current">Laporan Tahunan</li>
           </ol>
         </nav>
       </div>

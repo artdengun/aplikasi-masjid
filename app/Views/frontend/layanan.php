@@ -5,15 +5,11 @@
     <!-- Page Title -->
     <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/ui/background_header.jpg);">
       <div class="container position-relative">
-        <h1>Services</h1>
-        <p>
-          Home
-          /
-          Services</p>
+      <h1>Layanan</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Services</li>
+            <li><a href="<?php echo base_url('/'); ?>">Halaman Utama</a></li>
+            <li class="current">Layanan</li>
           </ol>
         </nav>
       </div>
