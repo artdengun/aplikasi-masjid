@@ -11,8 +11,8 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="<?php echo base_url('assets/logo/brand.png'); ?>" rel="icon">
+  <link href="<?php echo base_url('assets/logo/brand.png'); ?>" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -43,7 +43,7 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="frontend/images/logo/brand.png  " alt="MasjidAlHikmahPayangan">
+        <img src="assets/logo/brand.png" alt="MasjidAlHikmahPayangan">
         <h1 class="sitename">Masjid AlHikmah</h1> 
       </a>
 
@@ -66,7 +66,6 @@
                     <li><a href="#">Deep Dropdown 5</a></li>
                   </ul>
                 </li> -->
-              <li><a href="#"></a></li>
               <li><a href="<?php echo base_url('/laporan-tahunan')?>">Laporan Tahunan</a></li>
               <li><a href="<?php echo base_url('/laporan-kotak-jumat')?>">Laporan Kotak Jumat </a></li>
             </ul>

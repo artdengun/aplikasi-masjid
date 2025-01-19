@@ -5,12 +5,12 @@
     <!-- Page Title -->
     <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);">
       <div class="container position-relative">
-        <h1>About</h1>
-        <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
+        <h1>Sejarah Masjid</h1>
+        <p>Informasi Sejarah Masjid Alhikmah Payangan</p>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">About</li>
+            <li><a href="<?php echo base_url('/'); ?>">Home</a></li>
+            <li class="current">Sejarah Masjid</li>
           </ol>
         </nav>
       </div>
@@ -312,22 +312,4 @@
     </section><!-- /Services Section -->
 
   </main>
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
-</html>
+  <?php echo view('frontend/_partials/footer'); ?>

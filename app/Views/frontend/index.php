@@ -604,8 +604,7 @@
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
-      <h2>Recent Posts</h2>
-      <p>Necessitatibus eius consequatur</p>
+      <h2>Postingan Social Media</h2>
     </div><!-- End Section Title -->
 
     <div class="container">
@@ -616,27 +615,27 @@
           <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="100">
 
             <div class="post-img position-relative overflow-hidden">
-              <img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt="">
-              <span class="post-date">December 12</span>
+              <img src="<?php echo base_url('assets/img/event/sholat_subuh_gabungan.png'); ?>" class="img-fluid" alt="Event Sholat Subuh Gabungan">
+              <span class="post-date">27 Agustus 2021</span>
             </div>
 
             <div class="post-content d-flex flex-column">
 
-              <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
+              <h3 class="post-title">Gerakan Shalat 5 Waktu Berjamaah</h3>
 
               <div class="meta d-flex align-items-center">
                 <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">Julia Parker</span>
+                  <i class="bi bi-person"></i> <span class="ps-2">Admin </span>
                 </div>
                 <span class="px-3 text-black-50">/</span>
                 <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Politics</span>
+                  <i class="bi bi-folder2"></i> <span class="ps-2">Acara Masjid</span>
                 </div>
               </div>
 
               <hr>
 
-              <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
+              <a href="https://www.instagram.com/p/CTEAaV3p-b1/" class="readmore stretched-link" target="_blank"><span>Baca Lebih Lengkap ...</span><i
                   class="bi bi-arrow-right"></i></a>
 
             </div>
@@ -648,27 +647,27 @@
           <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="200">
 
             <div class="post-img position-relative overflow-hidden">
-              <img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt="">
-              <span class="post-date">July 17</span>
+              <img src="<?php echo base_url('assets/img/event/zakat_fitrah.png'); ?>" class="img-fluid" alt="">
+              <span class="post-date">3 Mei 2021</span>
             </div>
 
             <div class="post-content d-flex flex-column">
 
-              <h3 class="post-title">Et repellendus molestiae qui est sed omnis</h3>
+              <h3 class="post-title">Layanan Penyaluran Zakat Fitrah</h3>
 
               <div class="meta d-flex align-items-center">
                 <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">Mario Douglas</span>
+                  <i class="bi bi-person"></i> <span class="ps-2">Admin</span>
                 </div>
                 <span class="px-3 text-black-50">/</span>
                 <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Sports</span>
+                  <i class="bi bi-folder2"></i> <span class="ps-2">Layanan Masjid</span>
                 </div>
               </div>
 
               <hr>
 
-              <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
+              <a href="https://www.instagram.com/p/COZsfQHrbO-/" class="readmore stretched-link" target="_blank"><span>Baca Lebih Lengkap ...</span><i
                   class="bi bi-arrow-right"></i></a>
 
             </div>
@@ -680,136 +679,40 @@
           <div class="post-item position-relative h-100">
 
             <div class="post-img position-relative overflow-hidden">
-              <img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt="">
-              <span class="post-date">September 05</span>
+              <img src="<?php echo base_url('assets/img/event/donasi_hewan_qurban.png');?>" class="img-fluid" alt="">
+              <span class="post-date">September 05 2024</span>
             </div>
 
-            <div class="post-content d-flex flex-column">
+            <div class="post-content d-flex flex-column"> 
 
-              <h3 class="post-title">Quia assumenda est et veritati tirana ploder</h3>
+              <h3 class="post-title">Layanan Donasi Hewan Qurban</h3>
 
               <div class="meta d-flex align-items-center">
                 <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">Lisa Hunter</span>
+                  <i class="bi bi-person"></i> <span class="ps-2">Admin</span>
                 </div>
                 <span class="px-3 text-black-50">/</span>
                 <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Economics</span>
+                  <i class="bi bi-folder2"></i> <span class="ps-2">Layanan Masjid</span>
                 </div>
               </div>
 
               <hr>
 
-              <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
+              <a href="https://www.instagram.com/p/CPUe3DRrA_-/" class="readmore stretched-link"  target="_blank"><span>Baca Lebih Lengkap ...</span><i
                   class="bi bi-arrow-right"></i></a>
 
             </div>
 
           </div>
         </div><!-- End post item -->
-
       </div>
 
     </div>
 
-  </section><!-- /Recent Posts Section -->
+  </section>
+  
+  <!-- /Recent Posts Section -->
 </main>
 
-<footer id="footer" class="footer dark-background">
-
-  <div class="footer-top">
-    <div class="container">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <div class="footer-widget">
-            <div class="text-center">
-              <h3 style="color: white;">MASJID AL-HIKMAH</h3>
-              <p style="color: white;">KAMPUNG PAYANGAN </p> <br>
-              <img src="<?php echo base_url('frontend/images/logo/brand.png'); ?>" width="200px" /> <br> <br> <br>
-
-              <p style="color: white;">Jl. Wibawa Mukti II Jl. Diman, RT.004/RW.006, Jatisari, Kec. Jatiasih, Kota
-                Bekasi, Jawa Barat 17426</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-          <div class="footer-widget">
-            <div class="text-justify">
-              <div class="text-center">
-                <img src="<?php echo base_url('frontend/images/slider/sm-1.png'); ?>"> <br><br><br>
-              </div>
-              <p style="color: white;">إِنَّمَا يَعْمُرُ مَسَاجِدَ اللَّهِ مَنْ آمَنَ بِاللَّهِ وَالْيَوْمِ الْآخِرِ
-                وَأَقَامَ الصَّلَاةَ وَآتَى الزَّكَاةَ وَلَمْ يَخْشَ إِلَّا اللَّهَ ۖ فَعَسَىٰ أُولَٰئِكَ أَنْ يَكُونُوا
-                مِنَ الْمُهْتَدِينَ</p>
-
-              <p style="color: white;">Allah SWT berfirman : "Sesungguhnya yang memakmurkan masjid Allah hanyalah
-                orang-orang yang beriman kepada Allah dan hari kemudian, serta (tetap) melaksanakan salat, menunaikan
-                zakat dan tidak takut (kepada apa pun) kecuali kepada Allah. Maka mudah-mudahan mereka termasuk
-                orang-orang yang mendapat petunjuk" Q.S At-Taubah : 18</p>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Kontak Kami</h4>
-          <div class="about-foo">
-            </p>
-            <ul>
-              <li>
-                <p> Kontak 1 : Saudara Arifin Akmal<span class="ico"><i class="fa fa-phone"></i></span><strong>
-                    082261994978
-                  </strong></p>
-              </li>
-              <li>
-                <p> Kontak 2 : Saudara Arifin Akmal<span class="ico"><i class="fa fa-phone"></i></span><strong>
-                    085716967806
-                  </strong></p>
-              </li>
-              <li><span class="ico"><i class="fa fa-map-marker"></i></span><span class="con">Jatisari, Jatiasih, Kota
-                  Bekasi, Jawa Barat, INDONESIA</span></li>
-
-            </ul>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <div class="copyright text-center">
-    <div
-      class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
-      <div class="d-flex flex-column align-items-center align-items-lg-start">
-        <p><?php
-                                        $tanggal = time();
-                                        $tahun = date("Y", $tanggal);
-                                        echo "Copyright @ 2020 - " . $tahun;
-                                        ?> <span> Masjid Al-hikmah Payangan </span>
-          Created By : <a href="#"> Payangan Developer Team</a>
-        </p>
-      </div>
-    </div>
-  </div>
-</footer>
-<!-- Scroll Top -->
-<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-    class="bi bi-arrow-up-short"></i></a>
-
-<!-- Preloader -->
-<div id="preloader"></div>
-
-<!-- Vendor JS Files -->
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-
-<!-- Main JS File -->
-<script src="assets/js/main.js"></script>
-
-</body>
-
-</html>
+<?php echo view('frontend/_partials/footer'); ?>
