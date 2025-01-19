@@ -35,19 +35,14 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Frontend::frontend');
 $routes->get('/kontak', 'Frontend::kontak');
 $routes->get('/sejarah', 'Frontend::sejarah');
-$routes->get('/layanan', 'Frontend::layanan');
 $routes->get('/informasi-acara', 'Frontend::informasiAcara');
-$routes->get('/laporan-arus-kas', 'Frontend::laporanArusKas');
-$routes->get('/laporan-tahunan', 'Frontend::laporanTahunan');
-$routes->get('/laporan-kotak-jumat', 'Frontend::laporanKotakJumat');
-
+$routes->get('/laporan-keuangan', 'Frontend::laporanKeuangan');
 $routes->get('/dashboard', 'Home::index');
 $routes->get('/v1/auth', 'LoginController::index');
 
 
 
 # data internal masjid terkait data 
-
 $routes->get('daftarpengurus', 'PengurusController::index');
 $routes->get('daftarpengurus/laporan', 'PengurusController::laporan');
 $routes->get('daftarpengurus/create', 'PengurusController::create');

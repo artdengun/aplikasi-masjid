@@ -51,23 +51,12 @@
         <ul>
           <li><a href="<?php echo base_url('/') ?>" class="active">Halaman Utama</a></li>
           <li><a href="<?php echo base_url('/sejarah') ?>">Sejarah</a></li>
-          <li><a href="<?php echo base_url('/layanan') ?>">Layanan</a></li>
+          <!-- <li><a href="<?php echo base_url('/layanan') ?>">Layanan</a></li> -->
           <li><a href="<?php echo base_url('/informasi-acara') ?>">Informasi Acara</a></li>
           <!-- <li><a href="blog.html">Informasi</a></li> -->
-          <li class="dropdown"><a href="#"><span>Laporan Keuangan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#"><span>Laporan Masjid</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="<?php echo base_url('/laporan-arus-kas') ?>">Laporan Arus Kas </a></li>
-                <!-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li> -->
-              <li><a href="<?php echo base_url('/laporan-tahunan')?>">Laporan Tahunan</a></li>
-              <li><a href="<?php echo base_url('/laporan-kotak-jumat')?>">Laporan Kotak Jumat </a></li>
+              <li><a href="<?php echo base_url('/laporan-keuangan')?>">Laporan Keuangan</a></li>
             </ul>
           </li>
           <li><a href="<?php echo base_url('/kontak')?>">Kontak Masjid</a></li>

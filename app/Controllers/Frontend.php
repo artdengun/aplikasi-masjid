@@ -18,26 +18,12 @@ class Frontend extends BaseController
 	{
 		return view("frontend/sejarah");
 	}
-
-	public function layanan()
-	{
-		return view("frontend/layanan");
-	}
-
 	public function informasiAcara()
 	{
 		return view("frontend/informasi-acara");
 	}
-	public function laporanArusKas()
+	public function laporanKeuangan()
 	{
-		return view("frontend/laporan-arus-kas");
-	}
-	public function laporanTahunan()
-	{
-		return view("frontend/laporan-tahunan");
-	}
-	public function laporanKotakJumat()
-	{
-		return view("frontend/laporan-kotak-jumat");
+		return view("frontend/laporan-keuangan");
 	}
 }
