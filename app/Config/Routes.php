@@ -118,12 +118,6 @@ $routes->get('daftarremaja/edit/(:alphanum)', 'RemajaController::edit/$1');
 $routes->post('daftarremaja/update/(:alphanum)', 'RemajaController::update/$1');
 $routes->get('daftarremaja/delete/(:alphanum)', 'RemajaController::delete/$1');
 
-# close data internal masjid
-
-
-# data security route
-
-
 $routes->get('users', 'UsersController::index');
 $routes->get('users/create', 'UsersController::create');
 $routes->post('users/store', 'UsersController::store');
