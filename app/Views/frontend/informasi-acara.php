@@ -156,24 +156,24 @@
             <article class="position-relative h-100">
 
               <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-6.jpg" class="img-fluid" alt="">
+                <img src="assets/img/event/sambutan_ketua_dkm.png" class="img-fluid" alt="">
               </div>
 
               <div class="meta d-flex align-items-end">
-                <span class="post-date"><span>07</span>December</span>
+                <span class="post-date"><span>09</span>Oktober 2022</span>
                 <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">Julia White</span>
+                  <i class="bi bi-person"></i> <span class="ps-2">Admin</span>
                 </div>
                 <span class="px-3 text-black-50">/</span>
                 <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Economics</span>
+                  <i class="bi bi-folder2"></i> <span class="ps-2">Forum Fs3G </span>
                 </div>
               </div>
 
               <div class="post-content d-flex flex-column">
 
-                <h3 class="post-title">Distinctio provident quibusdam numquam aperiam aut</h3>
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                <h3 class="post-title">Sambutan Ketua DKM Masjid Al Hikmah Payangan Jatisari Jatiasih</h3>
+                <a href="https://www.youtube.com/watch?v=1U6g9JkJmpA" class="readmore stretched-link" target="_blank"><span>Lihat Acara ...</span><i class="bi bi-arrow-right"></i></a>
 
               </div>
 
@@ -185,56 +185,6 @@
 
     </section><!-- /Blog Posts 2 Section -->
 
-    <!-- Blog Pagination Section -->
-    <section id="blog-pagination" class="blog-pagination section">
-
-      <div class="container">
-        <div class="d-flex justify-content-center">
-          <ul>
-            <li><a href="#"><i class="bi bi-chevron-left"></i></a></li>
-            <li><a href="#">1</a></li>
-            <li><a href="#" class="active">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li>...</li>
-            <li><a href="#">10</a></li>
-            <li><a href="#"><i class="bi bi-chevron-right"></i></a></li>
-          </ul>
-        </div>
-      </div>
-
-    </section><!-- /Blog Pagination Section -->
-
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section light-background">
-
-      <div class="content">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6">
-              <h3>Subscribe To Our Newsletter</h3>
-              <p class="opacity-50">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nesciunt, reprehenderit!
-              </p>
-            </div>
-            <div class="col-lg-6">
-              <form action="forms/newsletter.php" class="form-subscribe php-email-form">
-                <div class="form-group d-flex align-items-stretch">
-                  <input type="email" name="email" class="form-control h-100" placeholder="Enter your e-mail">
-                  <input type="submit" class="btn btn-secondary px-4" value="Subcribe">
-                </div>
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">
-                  Your subscription request has been sent. Thank you!
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- /Call To Action Section -->
 
   </main>
   <?php echo view('frontend/_partials/footer'); ?>

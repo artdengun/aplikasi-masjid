@@ -37,7 +37,6 @@
             Penamaan Al-Hikmah sendiri adalah hasil sumbangan pemikiran Alm. Bpk. Genih, yang bermakna Lambang
             Kebijaksanaan yang melampaui Ilmu Pengetahuan, Hikmah dapat juga dimaknai 'tengah' sebagaimana letak
             posisinya yang persis berada ditengah Kampung Payangan.
-
           </p>>
         </div>
       </div>
