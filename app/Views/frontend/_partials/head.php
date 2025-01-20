@@ -43,8 +43,8 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/logo/brand.png" alt="MasjidAlHikmahPayangan">
-        <h1 class="sitename">Masjid AlHikmah</h1> 
+        <img src="assets/logo/brand.jpg" alt="MasjidAlHikmahPayangan">
+        <h4 class="sitename">Masjid AL Hikmah Payangan</h4> 
       </a>
 
       <nav id="navmenu" class="navmenu">
