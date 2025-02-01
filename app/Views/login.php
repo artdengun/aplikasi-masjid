@@ -1,42 +1,127 @@
-<div class="container">
-        <div class="body d-md-flex align-items-center justify-content-between">
-            <div class="box-1 mt-md-0 mt-5">
-                <img src="https://images.pexels.com/photos/2033997/pexels-photo-2033997.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                    class="" alt="">
-            </div>
-            <div class=" box-2 d-flex flex-column h-100">
-                <div class="mt-5">
-                    <p class="mb-1 h-1">Create Account.</p>
-                    <p class="text-muted mb-2">Share your thouhts with the world form today.</p>
-                    <div class="d-flex flex-column ">
-                        <p class="text-muted mb-2">Continue with...</p>
-                        <div class="d-flex align-items-center">
-                            <a href="#" class="box me-2 selectio">
-                                <span class="fab fa-facebook-f mb-2"></span>
-                                <p class="mb-0">Facebook</p>
-                            </a>
-                            <a href="#" class="box me-2">
-                                <span class="fab fa-google mb-2"></span>
-                                <p class="mb-0">Google</p>
-                            </a>
-                            <a href="#" class="box">
-                                <span class="far fa-envelope mb-2"></span>
-                                <p class="mb-0">Email</p>
-                            </a>
-                        </div>
-                        <div class="mt-3">
-                            <p class="mb-0 text-muted">Already have an account?</p>
-                            <div class="btn btn-primary">Log in<span class="fas fa-chevron-right ms-1"></span></div>
-                        </div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Pages / Login - NiceAdmin Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="dash/img/favicon.png" rel="icon">
+  <link href="dash/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="dash/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="dash/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="dash/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="dash/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="dash/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="dash/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="dash/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="dash/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <main>
+    <div class="container">
+
+      <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+
+              <div class="d-flex justify-content-center py-4">
+                <a href="index.html" class="logo d-flex align-items-center w-auto">
+                  <img src="dash/img/logo.png" alt="">
+                  <span class="d-none d-lg-block">NiceAdmin</span>
+                </a>
+              </div><!-- End Logo -->
+
+              <div class="card mb-3">
+
+                <div class="card-body">
+
+                  <div class="pt-4 pb-2">
+                    <h5 class="card-title text-center pb-0 fs-4">Login to Your Account</h5>
+                    <p class="text-center small">Enter your username & password to login</p>
+                  </div>
+
+                  <form class="row g-3 needs-validation" novalidate>
+
+                    <div class="col-12">
+                      <label for="yourUsername" class="form-label">Username</label>
+                      <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" name="username" class="form-control" id="yourUsername" required>
+                        <div class="invalid-feedback">Please enter your username.</div>
+                      </div>
                     </div>
+
+                    <div class="col-12">
+                      <label for="yourPassword" class="form-label">Password</label>
+                      <input type="password" name="password" class="form-control" id="yourPassword" required>
+                      <div class="invalid-feedback">Please enter your password!</div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="remember" value="true" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">Remember me</label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button class="btn btn-primary w-100" type="submit">Login</button>
+                    </div>
+                    <div class="col-12">
+                      <p class="small mb-0">Don't have account? <a href="pages-register.html">Create an account</a></p>
+                    </div>
+                  </form>
+
                 </div>
-                <div class="mt-auto">
-                    <p class="footer text-muted mb-0 mt-md-0 mt-4">By register you agree with our
-                        <span class="p-color me-1">terms and conditions</span>and
-                        <span class="p-color ms-1">privacy policy</span>
-                    </p>
-                </div>
+              </div>
+
+              <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+              </div>
+
             </div>
-            <span class="fas fa-times"></span>
+          </div>
         </div>
+
+      </section>
+
     </div>
+  </main><!-- End #main -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="dash/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="dash/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="dash/vendor/chart.js/chart.umd.js"></script>
+  <script src="dash/vendor/echarts/echarts.min.js"></script>
+  <script src="dash/vendor/quill/quill.js"></script>
+  <script src="dash/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="dash/vendor/tinymce/tinymce.min.js"></script>
+  <script src="dash/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="dash/js/main.js"></script>
+
+</body>
+
+</html>
