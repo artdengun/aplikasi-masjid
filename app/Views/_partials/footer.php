@@ -1,49 +1,27 @@
-<script src="<?php echo base_url('plugins/jquery/jquery.min.js'); ?>"></script>
-<!-- Option 1: Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<!-- Bootstrap 4 -->
-<script src="<?php echo base_url('plugins/bootstrap/js/bootstrap.bundle.min.js'); ?>"></script>
-<!-- DataTables  & Plugins -->
-<script src="<?php echo base_url('plugins/datatables/jquery.dataTables.min.js'); ?>"></script>
-<script src="<?php echo base_url('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js'); ?>"></script>
-<script src="<?php echo base_url('plugins/datatables-responsive/js/dataTables.responsive.min.js'); ?>"></script>
-<script src="<?php echo base_url('plugins/datatables-responsive/js/responsive.bootstrap4.min.js'); ?>"></script>
-<script src="<?php echo base_url('plugins/datatables-buttons/js/dataTables.buttons.min.js'); ?>"></script>
-<script src="<?php echo base_url('plugins/datatables-buttons/js/buttons.bootstrap4.min.js'); ?>"></script>
-<script src="<?php echo base_url('plugins/jszip/jszip.min.js'); ?>"></script>
-<script src="<?php echo base_url('plugins/pdfmake/pdfmake.min.js'); ?>"></script>
-<script src="<?php echo base_url('plugins/pdfmake/vfs_fonts.js'); ?>"></script>
-<script src="<?php echo base_url('plugins/datatables-buttons/js/buttons.html5.min.js'); ?>"></script>
-<script src="<?php echo base_url('plugins/datatables-buttons/js/buttons.print.min.js'); ?>"></script>
-<script src="<?php echo base_url('plugins/datatables-buttons/js/buttons.colVis.min.js'); ?>"></script>
-<!-- AdminLTE App -->
-<script src="<?php echo base_url('plugins/daterangepicker/daterangepicker.js'); ?>"></script>
+<footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </footer><!-- End Footer -->
 
-<script src="<?php echo base_url('dist/js/adminlte.min.js'); ?>"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="<?php echo base_url('dist/js/demo.js'); ?>"></script>
-<!-- Page specific script -->
-<script>
-  $(function() {
-    $("#example1").DataTable({
-      "responsive": true,
-      "searching": false,
-      "lengthChange": false,
-      "autoWidth": false,
-      "buttons": ["excel", "pdf"]
-    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
-    $('#example2').DataTable({
-      "paging": true,
-      "lengthChange": true,
-      "searching": true,
-      "ordering": true,
-      "info": true,
-      "autoWidth": true,
-      "responsive": true,
-    });
-  });
-</script>
-</div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="<?php echo base_url('dash/vendor/apexcharts/apexcharts.min.js'); ?>"></script>
+  <script src="<?php echo base_url('dash/vendor/bootstrap/js/bootstrap.bundle.min.js'); ?>"></script>
+  <script src="<?php echo base_url('dash/vendor/chart.js/chart.umd.js'); ?>"></script>
+  <script src="<?php echo base_url('dash/vendor/echarts/echarts.min.js'); ?>"></script>
+  <script src="<?php echo base_url('dash/vendor/quill/quill.js'); ?>"></script>
+  <script src="<?php echo base_url('dash/vendor/simple-datatables/simple-datatables.js'); ?>"></script>
+  <script src="<?php echo base_url('dash/vendor/tinymce/tinymce.min.js'); ?>"></script>
+  <script src="<?php echo base_url('dash/vendor/php-email-form/validate.js'); ?>"></script>
+
+  <!-- Template Main JS File -->
+  <script src="<?php echo base_url('dash/js/main.js'); ?>"></script>
+
 </body>
 
 </html>
