@@ -1,81 +1,42 @@
-<?php echo view('_partials/header'); ?>
-<body class="hold-transition login-page">
-    <div class="login-box">
-        <!-- /.login-logo -->
-        <div class="card card-outline card-primary shadow-lg">
-            <div class="card-header text-center">
-                <a href="#" class="h1"><b>MIS</b></a>
-            </div> <br>
-            <div class="text-center">
-                <img src="<?php echo base_url('dist/img/logo.ico'); ?>" class="rounded-circle mx-auto" alt="gambar al-hikmah" height="180"> <br><br>
-                <h4>Management Information System</h4>
-
+<div class="container">
+        <div class="body d-md-flex align-items-center justify-content-between">
+            <div class="box-1 mt-md-0 mt-5">
+                <img src="https://images.pexels.com/photos/2033997/pexels-photo-2033997.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    class="" alt="">
             </div>
-            <p class="login-box-msg"></p>
-
-            <div class="">
-            </div>
-            <div class="card-body">
-                <?php
-                if (!empty(session()->getFlashdata('sukses'))) { ?>
-                    <div class="alert alert-success">
-                        <?php echo session()->getFlashdata('sukses'); ?>
-                    </div>
-                <?php } ?>
-
-                <?php if (!empty(session()->getFlashdata('haruslogin'))) { ?>
-                    <div class="alert alert-info">
-                        <?php echo session()->getFlashdata('haruslogin'); ?>
-                    </div>
-                <?php } ?>
-
-                <?php if (!empty(session()->getFlashdata('gagal'))) { ?>
-                    <div class="alert alert-warning">
-                        <?php echo session()->getFlashdata('gagal'); ?>
-                    </div>
-                <?php } ?>
-                <?php
-                echo form_open('LoginController/cek_login');
-                ?>
-                <form action="../../index3.html" method="post">
-                    <div class="input-group mb-3">
-                        <input type="text" name="username" class="form-control" placeholder="Input Username " required>
-                        <div class="input-group-append">
-                            <div class="input-group-text">
-                                <span class="fas fa-envelope"></span>
-                            </div>
+            <div class=" box-2 d-flex flex-column h-100">
+                <div class="mt-5">
+                    <p class="mb-1 h-1">Create Account.</p>
+                    <p class="text-muted mb-2">Share your thouhts with the world form today.</p>
+                    <div class="d-flex flex-column ">
+                        <p class="text-muted mb-2">Continue with...</p>
+                        <div class="d-flex align-items-center">
+                            <a href="#" class="box me-2 selectio">
+                                <span class="fab fa-facebook-f mb-2"></span>
+                                <p class="mb-0">Facebook</p>
+                            </a>
+                            <a href="#" class="box me-2">
+                                <span class="fab fa-google mb-2"></span>
+                                <p class="mb-0">Google</p>
+                            </a>
+                            <a href="#" class="box">
+                                <span class="far fa-envelope mb-2"></span>
+                                <p class="mb-0">Email</p>
+                            </a>
+                        </div>
+                        <div class="mt-3">
+                            <p class="mb-0 text-muted">Already have an account?</p>
+                            <div class="btn btn-primary">Log in<span class="fas fa-chevron-right ms-1"></span></div>
                         </div>
                     </div>
-                    <div class="input-group mb-3">
-                        <input type="password" name="password" class="form-control" placeholder="Input Password" required>
-                        <div class="input-group-append">
-                            <div class="input-group-text">
-                                <span class="fas fa-lock"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-
-                        <div class="col-md-12">
-                            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
-                        </div>
-                        <!-- /.col -->
-                    </div>
-                </form>
-                <?php echo form_close(); ?>
+                </div>
+                <div class="mt-auto">
+                    <p class="footer text-muted mb-0 mt-md-0 mt-4">By register you agree with our
+                        <span class="p-color me-1">terms and conditions</span>and
+                        <span class="p-color ms-1">privacy policy</span>
+                    </p>
+                </div>
             </div>
-            <!-- /.card-body -->
+            <span class="fas fa-times"></span>
         </div>
-        <!-- /.card -->
     </div>
-    <!-- /.login-box -->
-
-    <!-- jQuery -->
-    <script src="<?= base_url() ?>/plugins/jquery/jquery.min.js"></script>
-    <!-- Bootstrap 4 -->
-    <script src="<?= base_url() ?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- AdminLTE App -->
-    <script src="<?= base_url() ?>/dist/js/adminlte.min.js"></script>
-</body>
-
-</html>

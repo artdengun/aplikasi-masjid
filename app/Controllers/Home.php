@@ -14,13 +14,6 @@ class Home extends BaseController
 
     public function index()
     {
-        // proteksi halaman
-        if (session()->get('username') == '') {
-            session()->setFlashdata('haruslogin', 'Silahkan Login Terlebih Dahulu');
-            return redirect()->to(base_url('auth'));
-        }
-
-
         $data['total_pengurus']       = $this->dashboard_model->getCountPengurus();
         $data['total_imam']           = $this->dashboard_model->getCountImam();
         $data['total_bilal']          = $this->dashboard_model->getCountBilal();
@@ -34,4 +27,12 @@ class Home extends BaseController
 
         return view('dashboard',  $data);
     }
+
+    public function login(){return view('login');}
+    public function profile(){return view('profile');}
+    public function faq(){return view('faq');}
+    public function blank(){return view('blank');}
+    public function notfound(){return view('404');}
+    public function register(){return view('register');}
+    public function contact(){return view('contact');}
 }
